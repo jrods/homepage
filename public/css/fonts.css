@@ -1,21 +1,66 @@
-/**
+/* Fonts
+   ------------------------------ */
+@font-face {
+    font-family: 'Fira Mono';
+    src: local('Fira Mono'),
+         url('../fonts/eot/FiraMono-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans ExtraLight'),
+         url('../fonts/eot/FiraSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Regular'),
+         url('../fonts/eot/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Regular.woff') format('woff');   
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Regular Italic'),
+         url('../fonts/eot/FiraSans-Italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Italic.woff') format('woff');    
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans SemiBold'),
+         url('../fonts/eot/FiraSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-SemiBold.woff') format('woff');  
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Bold'),
+         url('../fonts/eot/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Bold.woff') format('woff');  
+    font-weight: 700;
+    font-style: normal;
+}
 
-	Genericons
-
-*/
-
+/* Genericons
+   ------------------------------ */
 
 /* IE8 and below use EOT and allow cross-site embedding. 
    IE9 uses WOFF which is base64 encoded to allow cross-site embedding.
    So unfortunately, IE9 will throw a console error, but it'll still work.
    When the font is base64 encoded, cross-site embedding works in Firefox */
-
 @font-face {
     font-family: 'Genericons';
     src: local('Genericons');
     src: url('../fonts/eot/Genericons.eot') format('embedded-opentype');
 }
-
 @font-face {
     font-family: 'Genericons';
     src: local('Genericons');
@@ -24,7 +69,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'Genericons';
@@ -33,11 +77,8 @@
   }
 }
 
-
-/**
- * All Genericons
- */
-
+/* All Genericons
+   ------------------------------ */
 .genericon {
 	text-align: center;
 	-moz-transition: color .1s ease-in 0;
@@ -55,11 +96,8 @@
 	speak: none;
 }
 
-
-/**
- * Individual icons
- */
-
+/* Individual icons
+   ------------------------------ */
 .genericon-404:before { content: "\f423"; }
 .genericon-activity:before { content: "\f508"; }
 .genericon-anchor:before { content: "\f509"; }
@@ -207,7 +245,3 @@
 .genericon-xpost:before { content: "\f504"; }
 .genericon-youtube:before { content: "\f213"; }
 .genericon-zoom:before { content: "\f402"; }
-
-
-
-

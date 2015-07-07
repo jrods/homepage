@@ -137,6 +137,8 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 						<h4>Camosun Capstone 2015</h4>
 						<h4>Gameboyz Website</h4>
 
+						<p><a href="https://github.com/Gameboyz/theme.git">Source Code</a><span style="padding-left: 18px;"></span><a href="http://dagameboyz.com">Website Home</a></p>
+
 						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
 
 						<p>Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Through out the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
