@@ -117,62 +117,68 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 
 			<div id="skills" class="container">
 				<h2>Skills</h2>
-					<table>
-						<tr>
-							<th>Project Management</th>
-							<td>Capstone 2015, Comp199</td>
-						</tr>
-						<tr>
-							<th>Team Management</th>
-							<td>Capstone 2015, Comp199</td>
-						</tr>
-						<tr>
-							<th>Documentation</th>
-							<td>CST Program, Capstone 2015, Comp199</td>
-						</tr>
-					</table>
+				
+				<div class="horizontal">
+					<div class="row">
+						<div class="head">Project Management</div>
+						<p>Capstone 2015 Comp199</p>
+					</div>					
+
+					<div class="row">
+						<div class="head">Team Management</div>
+						<p>Capstone 2015 Comp199</p>
+					</div>					
+
+					<div class="row">
+						<div class="head">Documentation</div>
+						<p>CST Program Capstone 2015 Comp199</p>
+					</div>
+
+				</div>
+
 			</div>
 
 			<div id="software" class="container">
 				<h2>Software/Frameworks/Tools</h2>
 				
-				<ul>
-					<li class="head">IDEs/Text Editors</li>
-					<li>Emacs</li>
-					<li>Sublime Text</li>
-					<li>Intellij IDEA</li>
-					<li>Eclipse</li>
-					<li>Netbeans</li>
-				</ul>
-				
-				<ul>
-					<li class="head">Operating Systems</li>
-					<li>GNU/Linux</li>
-					<li>Apple Mac OS X</li>
-					<li>Microsoft Windows</li>
-					<li>FreeBSD</li>
-				</ul>
+				<div class="vertical five-col">
+					<ul>
+						<li class="head">IDEs/Text Editors</li>
+						<li>Emacs</li>
+						<li>Sublime Text</li>
+						<li>Intellij IDEA</li>
+						<li>Eclipse</li>
+						<li>Netbeans</li>
+					</ul>
+					
+					<ul>
+						<li class="head">Operating Systems</li>
+						<li>GNU/Linux</li>
+						<li>Apple Mac OS X</li>
+						<li>Microsoft Windows</li>
+						<li>FreeBSD</li>
+					</ul>
 
-				<ul>
-					<li class="head">Content Management System</li>
-					<li>Wordpress</li>
-				</ul>
+					<ul>
+						<li class="head">Content Management System</li>
+						<li>Wordpress</li>
+					</ul>
 
-				<ul>
-					<li class="head">Databases</li>
-					<li>Oracle</li>
-					<li>MySQL</li>
-					<li>PostgreSQL</li>
-					<li>MS SQL</li>
-				</ul>
+					<ul>
+						<li class="head">Databases</li>
+						<li>Oracle</li>
+						<li>MySQL</li>
+						<li>PostgreSQL</li>
+						<li>MS SQL</li>
+					</ul>
 
-				<ul>
-					<li class="head">Project Management</li>	
-					<li>Microsoft Project</li>
-					<li>Microsoft Visio</li>
-					<li>OpenProj</li>
-				</ul>
-
+					<ul>
+						<li class="head">Project Management</li>	
+						<li>Microsoft Project</li>
+						<li>Microsoft Visio</li>
+						<li>OpenProj</li>
+					</ul>
+				</div>
 			</div>
 
 			<div id="projects" class="container">

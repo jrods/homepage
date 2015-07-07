@@ -99,6 +99,41 @@ th {
     color: #55ACEE;
 }
 
+.head {
+    font-size: 18px;
+    font-weight: 600;
+}
+.horizontal p {
+    width: 75%;
+}
+.horizontal .head {
+    box-sizing: border-box;
+    border: 12px solid transparent;
+    width: 200px;
+}
+.horizontal .row > * {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.five-col > ul {
+    width: 19.5%;
+}
+.vertical ul {
+    display: inline-block;
+    padding: 12px 0 0;
+    vertical-align: top;
+}
+.vertical li {    
+    width: 100%;
+    padding: 3px 0 ;
+    text-align: center;
+}
+.vertical .head {
+    min-height: 52px;
+}
+
+
 /* Main
    ------------------------------ */
 #wrap {
@@ -221,26 +256,14 @@ th {
 #skills {
 
 }
+#skills tr:nth-child(even) > * {
+    padding: 0 12px 24px 0;
+}
 
 #software {
 
 }
-#software ul {
-    display: inline-block;
-    padding: 12px 0 0;
-    width: 19.5%;
-    vertical-align: top;
-}
-#software li {
-    width: 100%;
-    padding: 3px 0;
-    text-align: center;
-}
-#software .head {
-    min-height: 52px;
-    font-size: 18px;
-    font-weight: 600;
-}
+
 
 #projects {
 
@@ -252,7 +275,7 @@ th {
     color: #DBAA00;
 }
 #projects > div > div {
-    padding: 12px 0;
+    padding: 0 0 12px;
 }
 #projects h3 {
     padding: 12px 24px;
