@@ -94,37 +94,84 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 		<div id="main" class="">
 
 			<div id="about" class="container">
-				<div id="bio">
-					<h2>About Me</h2>
+			<h2>About Me</h2>
 
-					<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started programming with the CST program and developed my skills both in school and in my free time.</p>
+				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started programming with the CST program and developed my skills both in school and in my free time.</p>
 
-					<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
-					<br />
-					I'll come back to this.</p>
-				</div>
+				<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
+				<br />
+				I'll come back to this.</p>
+			</div>
 
-				<div id="contact">
-					<h2>Contact Info</h2>
-					
-					<p>Feel free to contact me at any of links listed below. I'll try to get back to you right away.<br />
-					<br />											
-					<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
-					<br />					
-					<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
-					<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a></p>
+			<div id="contact" class="container">
+				<h2>Contact Info</h2>
+				
+				<p>Feel free to contact me at any of links listed below. I'll try to get back to you right away.<br />
+				<br />											
+				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
+				<br />					
+				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
+				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a></p>
 
-				</div>
+			</div>
 
-				<div id="skills">
-					<h2>Skills</h2>
-					<p></p>
-				</div>
+			<div id="skills" class="container">
+				<h2>Skills</h2>
+					<table>
+						<tr>
+							<th>Project Management</th>
+							<td>Capstone 2015, Comp199</td>
+						</tr>
+						<tr>
+							<th>Team Management</th>
+							<td>Capstone 2015, Comp199</td>
+						</tr>
+						<tr>
+							<th>Documentation</th>
+							<td>CST Program, Capstone 2015, Comp199</td>
+						</tr>
+					</table>
+			</div>
 
-				<div id="software">
-					<h2>Software/Tools</h2>
-					<p></p>
-				</div>
+			<div id="software" class="container">
+				<h2>Software/Frameworks/Tools</h2>
+				
+				<ul>
+					<li class="head">IDEs/Text Editors</li>
+					<li>Emacs</li>
+					<li>Sublime Text</li>
+					<li>Intellij IDEA</li>
+					<li>Eclipse</li>
+					<li>Netbeans</li>
+				</ul>
+				
+				<ul>
+					<li class="head">Operating Systems</li>
+					<li>GNU/Linux</li>
+					<li>Apple Mac OS X</li>
+					<li>Microsoft Windows</li>
+					<li>FreeBSD</li>
+				</ul>
+
+				<ul>
+					<li class="head">Content Management System</li>
+					<li>Wordpress</li>
+				</ul>
+
+				<ul>
+					<li class="head">Databases</li>
+					<li>Oracle</li>
+					<li>MySQL</li>
+					<li>PostgreSQL</li>
+					<li>MS SQL</li>
+				</ul>
+
+				<ul>
+					<li class="head">Project Management</li>	
+					<li>Microsoft Project</li>
+					<li>Microsoft Visio</li>
+					<li>OpenProj</li>
+				</ul>
 
 			</div>
 

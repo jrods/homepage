@@ -4,7 +4,7 @@
 /* Tags
    ------------------------------ */
 * {
-    font-family: 'Fira Sans', Source Sans Pro, Verdana, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Fira Sans, Source Sans Pro, Verdana, Helvetica, sans-serif;
     font-size: 12px;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,6 +64,21 @@ p {
     box-sizing: border-box;
     border: 12px solid transparent;
 }
+table {
+    padding: 12px;
+    text-align: left;
+}
+tr > * {
+    padding: 0 12px 12px 0;
+}
+td {
+    vertical-align: text-top;
+}
+th {
+    min-width: 180px;
+    font-size: 18px;
+    vertical-align: text-top;
+}
 
 /* UI
    ------------------------------ */
@@ -71,7 +86,6 @@ p {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
-    position: -o-sticky;
     position: sticky;
     top: 0;
 }
@@ -175,21 +189,19 @@ p {
 /* Content
    ------------------------------ */
 #main {
-    padding: 48px 0 0;
+    margin: 0 0 48px;
     min-height: 100vh;
     background-color: #fff;
 }
 #main > div {
-    padding: 0 0 48px;
+    padding: 48px 0 0;
     background-color: #fff;
 }
+
 #about {
 
 }
-#bio, #contact {
-    padding: 0 0 24px;
-}
-#bio > p {
+#about > p {
     vertical-align: top;
 }
 #intro {
@@ -198,12 +210,38 @@ p {
 #site-intro {
     width: 64.5%;
 }
+
 #contact {
 
 }
 #contact span.genericon {
     margin-left: 24px;
 }
+
+#skills {
+
+}
+
+#software {
+
+}
+#software ul {
+    display: inline-block;
+    padding: 12px 0 0;
+    width: 19.5%;
+    vertical-align: top;
+}
+#software li {
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+}
+#software .head {
+    min-height: 52px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 #projects {
 
 }
