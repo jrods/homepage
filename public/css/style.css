@@ -66,7 +66,6 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     padding: 0;
     font-size: 100%;
-    vertical-align: baseline;
 }
 html {
     font-size: 100.01%;
@@ -104,10 +103,15 @@ h4 {
     font-size: 1.4em;
     font-weight: 400;
 }
-ul, li {
+li, ul {
     display: inline-block;
     list-style: none;
     text-decoration: none;
+}
+p {
+    display: inline-block;
+    box-sizing: padding-box;
+    padding: 12px;    
 }
 
 /* UI
@@ -119,6 +123,15 @@ ul, li {
     position: -o-sticky;
     position: sticky;
     top: 0;
+}
+.genericon {
+    vertical-align: text-bottom;
+    margin-right: 4px;
+    font-size: 24px;
+    color: #222;
+}
+.genericon-twitter {
+    color: #55ACEE;
 }
 
 /* Main
@@ -211,20 +224,34 @@ ul, li {
 /* Content
    ------------------------------ */
 #main {
+    padding: 48px 0 0;
     min-height: 100vh;
     background-color: #fff;
 }
 #main > div {
-    padding: 48px 0 36px 0;
+    padding: 0 0 48px;
     background-color: #fff;
 }
 #about {
-    
+
 }
-#about p {
-    display: inline-block;
-    padding: 12px;
-    width: 300px;
+#bio, #contact {
+    padding: 0 0 24px;
+}
+#bio > p {
+    vertical-align: top;
+}
+#intro {
+    width: 35%;
+}
+#site-intro {
+    width: 64.5%;
+}
+#contact {
+
+}
+#contact span.genericon {
+    margin-left: 24px;
 }
 #projects {
 
@@ -240,11 +267,6 @@ ul, li {
 }
 #projects h3 {
     padding: 12px 24px;
-}
-#projects p {
-    display: inline-block;
-    padding: 12px;
-    width: 300px;
 }
 
 /* Mobile

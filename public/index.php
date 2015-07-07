@@ -16,6 +16,7 @@ $sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 	<meta charset="UTF-8" />
 
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
+	<link id="genericons" media="all" type="text/css" href="css/genericons.css" rel="stylesheet"></link>
 
 	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 	
@@ -51,7 +52,9 @@ $sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 				<ul>
 					<li><a href="#about">About</a>
 						<ul class="sub">
+							<li><a href="#contact">Contact</a></li>
 							<li><a href="#skills">Skills</a></li>
+							<li><a href="#software">Software</a></li>
 						</ul>
 					</li>
 					<li><a href="#projects">Projects</a>
@@ -89,11 +92,38 @@ $sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 		<div id="main" class="">
 
 			<div id="about" class="container">
-				<h2>About Me</h2>
+				<div id="bio">
+					<h2>About Me</h2>
 
-				<p>Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started with programming with the CST program and developed my programming skills both in school and in my free time.</p>
+					<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started programming with the CST program and developed my skills both in school and in my free time.</p>
 
-				<p>Here on my website, you'll be able to view my contact info and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location.</p>
+					<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
+					<br />
+					I'll come back to this.</p>
+				</div>
+
+				<div id="contact">
+					<h2>Contact Info</h2>
+					
+					<p>Feel free to contact me at any of links listed below. I'll try to get back to you right away.<br />
+					<br />											
+					<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
+					<br />					
+					<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
+					<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a></p>
+
+				</div>
+
+				<div id="skills">
+					<h2>Skills</h2>
+					<p></p>
+				</div>
+
+				<div id="software">
+					<h2>Software/Tools</h2>
+					<p></p>
+				</div>
+
 			</div>
 
 			<div id="projects" class="container">
@@ -101,7 +131,7 @@ $sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 
 				<div id="completed">
 					<h3>Completed</h3>
-					<div id="capstone" class="">
+					<div id="capstone" class="">						
 						<h4>Camosun Capstone 2015</h4>
 						<h4>Gameboyz Website</h4>
 
@@ -119,20 +149,11 @@ $sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 				<div id="in-progress">
 					<h3>In-progress</h3>
 					<div id="web-radio" class="">
+						<h4>Web Radio</h4>
 						<p>we will make all the monies</p>
 					</div>
 				</div>
 
-			</div>
-
-			<div id="skills" class="container">
-				<h2>Skills</h2>
-				<p>ma 420 skillz</p>
-			</div>
-
-			<div id="contact" class="container">
-				<h2>Contact Info</h2>
-				<p>jrod69@hotmail.com</p>
 			</div>
 
 		</div>

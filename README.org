@@ -1,0 +1,6 @@
+* homepage
+My homepage
+
+* Todo
+- Add license info for libraries and fonts
+- Animations
