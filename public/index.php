@@ -1,9 +1,11 @@
 <?php
 include 'lib/browser_ua.php';
 
-$ua = $_SERVER['HTTP_USER_AGENT'];
-
-$sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
+if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
+	$sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
+} else {
+	$sticky = false;
+}
 
 ?>
 
