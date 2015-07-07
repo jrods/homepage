@@ -110,8 +110,8 @@ li, ul {
 }
 p {
     display: inline-block;
-    box-sizing: padding-box;
-    padding: 12px;    
+    box-sizing: border-box;
+    border: 12px solid transparent;
 }
 
 /* UI
