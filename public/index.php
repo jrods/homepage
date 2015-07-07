@@ -18,7 +18,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 	<meta charset="UTF-8" />
 
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
-	<link id="genericons" media="all" type="text/css" href="css/genericons.css" rel="stylesheet"></link>
+	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
 	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 	
