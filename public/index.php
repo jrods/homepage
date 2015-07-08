@@ -43,7 +43,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 	<div id="wrap" class="">
 
 		<div id="header" class="">
-			<h1 id="title">Jared <span style="font-weight: 400">Smith</span></h1>
+			<h1 id="title">Jared <span style="color: #fff;font-weight: 400;">Smith</span></h1>
 			<hr />
 			<h2 id="subtitle">Homepage</h2>
 		</div>

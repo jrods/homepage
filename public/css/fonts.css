@@ -5,7 +5,7 @@
    ------------------------------ */
 @font-face {
     font-family: 'Fira Mono';
-    src: local('Fira Mono'),
+    src: local('Fira Mono Regular'),
          url('../fonts/eot/FiraMono-Regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/woff/FiraMono-Regular.woff') format('woff');
     font-weight: 400;
@@ -90,13 +90,13 @@
    When the font is base64 encoded, cross-site embedding works in Firefox */
 @font-face {
     font-family: 'Genericons';
-    src: local('Genericons');
-    src: url('../fonts/eot/Genericons.eot') format('embedded-opentype');
+    src: local('Genericons'),
+         url('../fonts/eot/Genericons.eot') format('embedded-opentype');
 }
 @font-face {
     font-family: 'Genericons';
-    src: local('Genericons');
-    src: url('../fonts/woff/Genericons.woff') format('woff'),
+    src: local('Genericons'),
+         url('../fonts/woff/Genericons.woff') format('woff'),
          url('../fonts/svg/Genericons.svg#genericonsregular') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -104,8 +104,8 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'Genericons';
-    src: local('Genericons');
-    src: url("../fonts/svg/Genericons.svg#Genericons") format("svg");
+    src: local('Genericons'),
+         url("../fonts/svg/Genericons.svg#Genericons") format("svg");
   }
 }
 

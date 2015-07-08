@@ -4,6 +4,7 @@
 /* Tags
    ------------------------------ */
 * {
+    color: #4C4C4C;
     font-family: 'Source Sans Pro', 'Fira Sans', Verdana, Helvetica, sans-serif;
     font-size: 12px;
 }
@@ -35,8 +36,12 @@ a:visited {
     color: #6D4084;
 }
 hr {
+    border-style: solid;
+    border-top: none;
     border-right: none;
+    border-left: none;
     width: 30%;
+    color: #fff;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Fira Sans';
@@ -231,7 +236,7 @@ th {
 /* Content
    ------------------------------ */
 #main {
-    margin: 0 0 48px;
+    padding: 0 0 48px;
     min-height: 100vh;
     background-color: #fff;
 }
