@@ -4,7 +4,7 @@
 /* Tags
    ------------------------------ */
 * {
-    font-family: 'Fira Sans', Fira Sans, Source Sans Pro, Verdana, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', 'Fira Sans', Verdana, Helvetica, sans-serif;
     font-size: 12px;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -37,6 +37,9 @@ a:visited {
 hr {
     border-right: none;
     width: 30%;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Fira Sans';
 }
 h1 {
     font-size: 4.0em;
@@ -100,6 +103,7 @@ th {
 }
 
 .head {
+    font-family: 'Fira Sans';
     font-size: 18px;
     font-weight: 600;
 }
@@ -172,6 +176,9 @@ th {
     border-bottom: 1px solid #ccc;
     background-color: #fff;
 
+}
+#nav * {
+    font-family: 'Fira Sans';
 }
 #nav-wrap {
     display: block;
@@ -250,7 +257,7 @@ th {
 
 }
 #contact span.genericon {
-    margin-left: 24px;
+    margin-left: 18px;
 }
 
 #skills {
@@ -264,7 +271,6 @@ th {
 
 }
 
-
 #projects {
 
 }
@@ -273,6 +279,9 @@ th {
 }
 #in-progress h3 {
     color: #DBAA00;
+}
+#experiments h3 {
+    color: #BC7129;
 }
 #projects > div > div {
     padding: 0 0 12px;

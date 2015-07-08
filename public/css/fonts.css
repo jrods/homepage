@@ -1,4 +1,7 @@
 /* Fonts
+   ----------------------------------------------------- */
+
+/* Mono
    ------------------------------ */
 @font-face {
     font-family: 'Fira Mono';
@@ -8,6 +11,9 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/* Fira Sans
+   ------------------------------ */
 @font-face {
     font-family: 'Fira Sans';
     src: local('Fira Sans ExtraLight'),
@@ -15,6 +21,7 @@
          url('../fonts/woff/FiraSans-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-stretch: normal;
 }
 @font-face {
     font-family: 'Fira Sans';
@@ -23,14 +30,7 @@
          url('../fonts/woff/FiraSans-Regular.woff') format('woff');   
     font-weight: 400;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Regular Italic'),
-         url('../fonts/eot/FiraSans-Italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/woff/FiraSans-Italic.woff') format('woff');    
-    font-weight: 400;
-    font-style: italic;
+    font-stretch: normal;
 }
 @font-face {
     font-family: 'Fira Sans';
@@ -39,14 +39,46 @@
          url('../fonts/woff/FiraSans-SemiBold.woff') format('woff');  
     font-weight: 600;
     font-style: normal;
+    font-stretch: normal;
 }
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Bold'),
-         url('../fonts/eot/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/woff/FiraSans-Bold.woff') format('woff');  
-    font-weight: 700;
+
+/* Source Sans Pro
+   ------------------------------ */
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: local('Source Sans Pro ExtraLight'),
+         url('../fonts/eot/SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/SourceSansPro-ExtraLight.otf.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
+    font-stretch: normal;         
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: local('Source Sans Pro Regular'),
+         url('../fonts/eot/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/SourceSansPro-Regular.otf.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: local('Source Sans Pro Italic'),
+         url('../fonts/eot/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/SourceSansPro-It.otf.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: local('Source Sans Pro Semibold'),
+         url('../fonts/eot/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/SourceSansPro-Semibold.otf.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
 }
 
 /* Genericons
@@ -80,20 +112,20 @@
 /* All Genericons
    ------------------------------ */
 .genericon {
-	text-align: center;
-	-moz-transition: color .1s ease-in 0;
-	-webkit-transition: color .1s ease-in 0;
-	display: inline-block;
-	font-family: 'Genericons';
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	line-height: 1;
-	text-decoration: inherit;
-	text-transform: none;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	speak: none;
+    text-align: center;
+    -moz-transition: color .1s ease-in 0;
+    -webkit-transition: color .1s ease-in 0;
+    display: inline-block;
+    font-family: 'Genericons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
 }
 
 /* Individual icons

@@ -49,8 +49,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 		</div>
 
 		<div id="nav" class="<?php if($sticky) echo 'sticky' ?>">
-			<div id="nav-wrap" class="container">
-				
+			<div id="nav-wrap" class="container">				
 				<ul>
 					<li><a href="#about">About</a>
 						<ul class="sub">
@@ -59,33 +58,37 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 							<li><a href="#software">Software</a></li>
 						</ul>
 					</li>
-					<li><a href="#projects">Projects</a>
-						
+					
+					<li><a href="#projects">Projects</a>						
 						<ul class="sub slideup">
 							<li><a href="#completed">Completed</a>
 								<ul class="subsub">
 									<li><a href="#capstone">Capstone</a></li>
 									<li><a href="#comp199">Comp199</a></li>
 								</ul>
-								
-								<li><a href="#in-progress">In-Progress</a>
-									<ul class="subsub">
-										<li><a href="#web-radio">Web Radio</a>
-											<ul class="subsub">
-												<li><a href="#web-radio-client">Client</a></li>
-												<li><a href="#web-radio-server">Server</a></li>
-												<li><a href="#web-radio-view">Listener</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
 							</li>
-						</ul>
+								
+							<li><a href="#in-progress">In-Progress</a>
+								<ul class="subsub">
+									<li><a href="#web-radio">Web Radio</a>
+										<ul class="subsub">
+											<li><a href="#web-radio-client">Client</a></li>
+											<li><a href="#web-radio-server">Server</a></li>
+											<li><a href="#web-radio-view">Listener</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
 
+							<li><a href="#experiments">Experiments</a>
+								<ul class="subsub">
+									<li><a href="#3dgameengine">3D Game Engine</a></li>
+								</ul>
+							</li>													
+						</ul>
 					</li>
 
-
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">Sample</a></li>
 				</ul>
 
 			</div>
@@ -94,7 +97,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 		<div id="main" class="">
 
 			<div id="about" class="container">
-			<h2>About Me</h2>
+				<h2>About Me</h2>
 
 				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started programming with the CST program and developed my skills both in school and in my free time.</p>
 
@@ -112,30 +115,42 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 				<br />					
 				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
 				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a></p>
-
 			</div>
 
 			<div id="skills" class="container">
 				<h2>Skills</h2>
 				
-				<div class="horizontal">
+				<div class="horizontal">					
 					<div class="row">
 						<div class="head">Project Management</div>
-						<p>Capstone 2015 Comp199</p>
+						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
+						<br />
+						<a href="#comp199">Comp199</a>: The first project I managed. It wasn't meant for any use in production. Looking back at the project, it feels amateurish, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
 					</div>					
 
 					<div class="row">
 						<div class="head">Team Management</div>
-						<p>Capstone 2015 Comp199</p>
+						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed team members. I would divided work up based on an individual feature and assigned that feature to a team memeber. I would also made sure communication was happening within the team and keep everyone up-to-date.<br />
+						<br />
+						<a href="#comp199">Comp199</a>: I would say with this project, I boop</p>
 					</div>					
 
 					<div class="row">
 						<div class="head">Documentation</div>
-						<p>CST Program Capstone 2015 Comp199</p>
+						<p>CST Program:<br />
+						<br />
+						<a href="#capstone">Capstone 2015</a>:<br />
+						<br />
+						<a href="#comp199">Comp199</a>:</p>
 					</div>
 
+					<div class="row">
+						<div class="head">Programming</div>
+						<p>CST Program:<br />
+						<br />
+						Free Time:</p>
+					</div>
 				</div>
-
 			</div>
 
 			<div id="software" class="container">
@@ -200,6 +215,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 					<div id="comp199" class="">
 						<h4>Camosun Comp199 Project</h4>
 						<h4>e-Commerce</h4>
+						<p></p>
 					</div>
 				</div>
 
@@ -208,6 +224,15 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 					<div id="web-radio" class="">
 						<h4>Web Radio</h4>
 						<p>we will make all the monies</p>
+					</div>
+				</div>
+
+				<div id="experiments">
+					<h3>Experiments/Practice</h3>
+					<div id="3dgameengine" class="">
+						<h4>3D Game Engine</h4>
+						<h4>OpenGL/Java</h4>
+						<p>will crush ue4</p>
 					</div>
 				</div>
 
