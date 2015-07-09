@@ -99,7 +99,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 			<div id="about" class="container">
 				<h2>About Me</h2>
 
-				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. I've completed the Computer Systems Technology program offered by Camosun College in 2015. I started programming with the CST program and developed my skills both in school and in my free time.</p>
+				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. In June 2015, I completed the Computer Systems Technology program offered by Camosun College. I started programming with the CST program and developed my skills both in school and in my free time.</p>
 
 				<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
 				<br />
@@ -109,7 +109,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 			<div id="contact" class="container">
 				<h2>Contact Info</h2>
 				
-				<p>Feel free to contact me at any of links listed below. I'll try to get back to you right away.<br />
+				<p>Feel free to contact me at any of the links listed below. I'll try to get back to you right away.<br />
 				<br />											
 				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
 				<br />					
@@ -130,9 +130,9 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 
 					<div class="row">
 						<div class="head">Team Management</div>
-						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team memeber. I would also made sure communication was happening within the team and keep everyone up-to-date.<br />
+						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team member. I also made sure communication was happening within the team and would keep everyone up-to-date.<br />
 						<br />
-						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I have done. (this project was before Capstone)</p>
+						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I had done (this project was before Capstone).</p>
 					</div>					
 
 					<div class="row">
@@ -209,7 +209,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 
 						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
 
-						<p>Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Through out the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
+						<p>Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
 					</div>
 
 					<div id="comp199" class="">
