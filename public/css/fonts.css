@@ -44,7 +44,7 @@
 
 /* Source Sans Pro
    ------------------------------ */
-@font-face{
+@font-face {
     font-family: 'Source Sans Pro';
     src: local('Source Sans Pro ExtraLight'),
          url('../fonts/eot/SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
@@ -53,7 +53,7 @@
     font-style: normal;
     font-stretch: normal;         
 }
-@font-face{
+@font-face {
     font-family: 'Source Sans Pro';
     src: local('Source Sans Pro Regular'),
          url('../fonts/eot/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -62,7 +62,7 @@
     font-style: normal;
     font-stretch: normal;
 }
-@font-face{
+@font-face {
     font-family: 'Source Sans Pro';
     src: local('Source Sans Pro Italic'),
          url('../fonts/eot/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),
@@ -71,7 +71,7 @@
     font-style: italic;
     font-stretch: normal;
 }
-@font-face{
+@font-face {
     font-family: 'Source Sans Pro';
     src: local('Source Sans Pro Semibold'),
          url('../fonts/eot/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),

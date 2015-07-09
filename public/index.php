@@ -125,19 +125,19 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 						<div class="head">Project Management</div>
 						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
 						<br />
-						<a href="#comp199">Comp199</a>: The first project I managed. It wasn't meant for any use in production. Looking back at the project, it feels amateurish, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
+						<a href="#comp199">Comp199</a>: This was the first project I managed. It wasn't meant for any use in production. Looking back at the project, there were many aspects I could have done better, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
 					</div>					
 
 					<div class="row">
 						<div class="head">Team Management</div>
-						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed team members. I would divided work up based on an individual feature and assigned that feature to a team memeber. I would also made sure communication was happening within the team and keep everyone up-to-date.<br />
+						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team memeber. I would also made sure communication was happening within the team and keep everyone up-to-date.<br />
 						<br />
-						<a href="#comp199">Comp199</a>: I would say with this project, I boop</p>
+						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I have done. (this project was before Capstone)</p>
 					</div>					
 
 					<div class="row">
 						<div class="head">Documentation</div>
-						<p>CST Program:<br />
+						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
 						<br />
 						<a href="#capstone">Capstone 2015</a>:<br />
 						<br />
@@ -205,7 +205,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 						<h4>Camosun Capstone 2015</h4>
 						<h4>Gameboyz Website</h4>
 
-						<p><a href="https://github.com/Gameboyz/theme.git">Source Code</a><span style="padding-left: 18px;"></span><a href="http://dagameboyz.com">Website Home</a></p>
+						<p><a href="http://dagameboyz.com">Website Home</a><span style="padding-left: 18px;"></span><a href="https://github.com/Gameboyz/theme.git">Source Code</a></p>
 
 						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
 
