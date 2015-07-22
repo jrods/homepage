@@ -1,11 +1,32 @@
 <?php
+
 include 'lib/browser_ua.php';
 
-if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
+/* old solution
+if( isset($_SERVER['HTTP_USER_AGENT']) ) {
+	$ua = $_SERVER['HTTP_USER_AGENT'];
+}
+
+//$ua = false;
+
+if ( $ua ) {
 	$sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
 } else {
 	$sticky = false;
 }
+*/
+
+if ( isset($_SERVER['HTTP_USER_AGENT']) ) 
+	$browser = getBrowser();
+
+if ( $browser['name'] == 'Apple Safari' && in_array($browser['version'], ['6.1','7.0','8.0','8.0.7']))
+	$sticky = true;
+elseif ( $browser['name'] == 'Mozilla Firefox' && floatval($browser['version']) > 33.0 )
+	$sticky = true;
+elseif ( $browser['name'] == 'Midori' && in_array($browser['version'], ['0.4','0.4.1','0.5']) )
+	$sticky = true;
+else
+	$sticky = false;
 
 ?>
 
@@ -20,11 +41,11 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
 	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
-	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
+	<script async id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 	
 <?php if( !$sticky ) { ?>	    
 
-	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
+	<script async id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
 
 	<script>
 	$(document).ready( function() {
@@ -34,7 +55,7 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 
 <?php } ?>
 
-	<script id="app" src="js/app.js" type="text/javascript"></script>
+	<script async id="app" src="js/app.js" type="text/javascript"></script>
 
 </head>
 	
@@ -193,6 +214,12 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 						<li>Microsoft Visio</li>
 						<li>OpenProj</li>
 					</ul>
+
+					<ul>
+						<li class="head">Misc</li>	
+						<li>Git/GitHub</li>
+						<li>Nginx</li>
+					</ul>					
 				</div>
 			</div>
 
@@ -209,7 +236,9 @@ if ( $ua = $_SERVER['HTTP_USER_AGENT'] ) {
 
 						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
 
-						<p>Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
+						<p><img id="gb-front" src="img/gameboyz-front.png" />Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
+
+						
 					</div>
 
 					<div id="comp199" class="">

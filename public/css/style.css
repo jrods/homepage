@@ -23,6 +23,7 @@ html {
     font-size: 100.01%;
 }
 body {
+    overflow-x: hidden;
     margin: 0;
     border: 0;
     padding: 0;
@@ -91,10 +92,9 @@ th {
 /* UI
    ------------------------------ */
 .sticky {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
+    z-index: 10000;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 .genericon {
@@ -126,7 +126,7 @@ th {
 }
 
 .five-col > ul {
-    width: 19.5%;
+    width: 24.5%;
 }
 .vertical ul {
     display: inline-block;
@@ -134,12 +134,16 @@ th {
     vertical-align: top;
 }
 .vertical li {    
-    width: 100%;
     padding: 3px 0 ;
+    width: 100%;
     text-align: center;
 }
 .vertical .head {
-    min-height: 52px;
+    min-height: 24px;
+}
+
+.overlay {
+
 }
 
 
@@ -149,9 +153,9 @@ th {
 
 }
 .container {
+    margin: 0 auto;
     max-width: 1000px;
     width: 90%;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 #header {
@@ -199,12 +203,12 @@ th {
     background-color: #fff;
 }
 .sub {
-    left: 0;
     top: 100%;
+    left: 0;
 }
 .subsub {
-    left: 100%;
     top: -1px;
+    left: 100%;
 }
 #nav-wrap li > ul > li {
     padding: 12px;
@@ -240,7 +244,7 @@ th {
     min-height: 100vh;
     background-color: #fff;
 }
-#main > div {
+#main > div, #main > article {
     padding: 48px 0 0;
     background-color: #fff;
 }
@@ -282,6 +286,19 @@ th {
 #completed h3 {
     color: #00A714;
 }
+#capstone {
+    position: relative;
+}
+#capstone p {
+    word-wrap: break-word;
+}
+#gb-front {
+    float: right;
+    margin: 0 0 24px 24px;
+    width: 65%;
+    box-shadow: -4px 4px 24px #999;
+}
+
 #in-progress h3 {
     color: #DBAA00;
 }
