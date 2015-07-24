@@ -109,7 +109,7 @@ else
 						</ul>
 					</li>
 
-					<li><a href="#">Sample</a></li>
+					<li style="color: #e4a424;">My homepage is still a work-in-progress, more info to come.</li>
 				</ul>
 
 			</div>
@@ -120,11 +120,16 @@ else
 			<div id="about" class="container">
 				<h2>About Me</h2>
 
-				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development. In June 2015, I completed the Computer Systems Technology program offered by Camosun College. I started programming with the CST program and developed my skills both in school and in my free time.</p>
+				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development, application development and other areas in software engineering. In June 2015, I completed the Computer Systems Technology program offered by Camosun College. I started programming with the CST program and developed my skills both in school and in my free time.</p>
 
 				<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
 				<br />
-				I'll come back to this.</p>
+				If there is any problem with my homepage, please don't hesitate to tell me. You may submit an issue if you have a github account: <a href="https://github.com/jrods/homepage/issues">homepage's issue tracker.</a> Or you may email me the details, <a href="#contact">email info located here.</a> I will also accept any feedback on my website through the contact channels I've listed before or in the contact section.</p>
+
+				<p id="summary">To give a summary about myself, I'm a reserved, quite individual. My interests include technology, computers, programming, music, video games, graphic design and automotive. I do have more interests, but the ones I listed are what I mostly spend my free time on. Since the CST program, my interest in programming has increased. It's an activity I really enjoy doing. Programming gives me a sense to express creativity, thought process and control.<br />
+				<br />
+				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, language design, functional programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring the topics I have no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. It can be a struggle for me because I'm so interested in many other fields that it can be hard to focus on just one topic for awhile. Being able to stick with it till I have a good understanding would benifit me in the long run. It's not a matter of getting bored with one topic and moving one but that there's so much to learn, it's overwhelming.</p>
+
 			</div>
 
 			<div id="contact" class="container">
@@ -135,7 +140,8 @@ else
 				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
 				<br />					
 				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
-				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a></p>
+				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a>
+				<span class="genericon genericon-linkedin-alt" style="color:#1784BB"></span>: <a href="https://ca.linkedin.com/pub/jared-smith/b2/36b/82">Jared Smith</a></p>
 			</div>
 
 			<div id="skills" class="container">
@@ -160,9 +166,9 @@ else
 						<div class="head">Documentation</div>
 						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
 						<br />
-						<a href="#capstone">Capstone 2015</a>:<br />
-						<br />
-						<a href="#comp199">Comp199</a>:</p>
+						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we have created douments outlining every corner of the project. Our documentation covers Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report on project completion. There are more areas our documentation covers on the project that I haven't listed.<br />
+						<br />						
+						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did includes Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report on course completion.</p>
 					</div>
 
 					<div class="row">
@@ -219,6 +225,7 @@ else
 						<li class="head">Misc</li>	
 						<li>Git/GitHub</li>
 						<li>Nginx</li>
+						<li>Apache Web</li>
 					</ul>					
 				</div>
 			</div>
@@ -232,13 +239,12 @@ else
 						<h4>Camosun Capstone 2015</h4>
 						<h4>Gameboyz Website</h4>
 
-						<p><a href="http://dagameboyz.com">Website Home</a><span style="padding-left: 18px;"></span><a href="https://github.com/Gameboyz/theme.git">Source Code</a></p>
+						<p class="project-links"><a href="http://dagameboyz.com">Website Home</a><span style="padding-left: 18px;"></span><a href="https://github.com/Gameboyz/theme.git">Source Code</a></p>
 
 						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
 
-						<p><img id="gb-front" src="img/gameboyz-front.png" />Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
+						<p><img id="gb-front" src="img/gameboyz-front2.png" />Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
 
-						
 					</div>
 
 					<div id="comp199" class="">

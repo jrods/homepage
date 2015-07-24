@@ -225,6 +225,7 @@ th {
 #nav-wrap ul:hover {
     display: inline-block;
 }
+#nav-wrap li:hover,
 #nav-wrap li:hover > a,
 #nav-wrap li:hover > ul > li > a {
     color: #fff;
@@ -256,10 +257,10 @@ th {
     vertical-align: top;
 }
 #intro {
-    width: 35%;
+    width: 37%;
 }
 #site-intro {
-    width: 64.5%;
+    width: 62.5%;
 }
 
 #contact {
@@ -282,6 +283,10 @@ th {
 
 #projects {
 
+}
+.project-links a {
+    font-size: 18px;
+    font-weight: bold;
 }
 #completed h3 {
     color: #00A714;
