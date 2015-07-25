@@ -124,11 +124,11 @@ else
 
 				<p id="site-intro">Here on my website, you'll be able to view my contact info, skills, abilities, experiences and various projects that I've completed or projects that are in-progress. To visit any section, the top navigation bar will direct you to the correct location. <br />
 				<br />
-				If there is any problem with my homepage, please don't hesitate to tell me. You may submit an issue if you have a github account: <a href="https://github.com/jrods/homepage/issues">homepage's issue tracker.</a> Or you may email me the details, <a href="#contact">email info located here.</a> I will also accept any feedback on my website through the contact channels I've listed before or in the contact section.</p>
+				If there are any problems with my homepage, please don't hesitate to tell me. You may submit an issue if you have a github account at the <a href="https://github.com/jrods/homepage/issues">homepage's issue tracker</a>. Or you may email me the details, <a href="#contact">email info is located here</a>. I will also accept any feedback on my website through the contact channels I've listed before or in the contact section.</p>
 
-				<p id="summary">To give a summary about myself, I'm a reserved, quite individual. My interests include technology, computers, programming, music, video games, graphic design and automotive. I do have more interests, but the ones I listed are what I mostly spend my free time on. Since the CST program, my interest in programming has increased. It's an activity I really enjoy doing. Programming gives me a sense to express creativity, thought process and control.<br />
+				<p id="summary">To give a summary about myself, I'm a reserved, quiet individual. My interests include technology, computers, programming, music, video games, graphic design and automotive. I do have more interests, but the ones I listed are what I mostly spend my free time on. Since the CST program, my interest in programming has increased significantly. It's an activity I really enjoy doing. Programming gives me a sense to express creativity, thought process and control.<br />
 				<br />
-				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, language design, functional programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring the topics I have no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. It can be a struggle for me because I'm so interested in many other fields that it can be hard to focus on just one topic for awhile. Being able to stick with it till I have a good understanding would benifit me in the long run. It's not a matter of getting bored with one topic and moving one but that there's so much to learn, it's overwhelming.</p>
+				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, Language Design, Functional Programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring new topics I have little or no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. I would love to learn everything I can, but there's so much knowledge out there, it can be difficult to focus on one topic for awhile. It's not a matter of getting bored with one topic and moving on, but since there's so much to learn, it can be overwhelming. In the long run, the knowledge I gain will be beneficial in my future endeavors.</p>
 
 			</div>
 
@@ -148,6 +148,18 @@ else
 				<h2>Skills</h2>
 				
 				<div class="horizontal">					
+					
+					<div class="row">
+						<div class="head">Programming</div>
+						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was Python.<br /> 
+						<br />
+						In second term of the program, I was introduced to Object-Oriented programming with Java. Along with Java, I was also taught SQL, php, Visual Basic and C#.<br /> 
+						<br />
+						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught Erlang. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn Javascript. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
+						<br />
+						<b>Free Time</b>: </p>
+					</div>
+
 					<div class="row">
 						<div class="head">Project Management</div>
 						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
@@ -166,17 +178,11 @@ else
 						<div class="head">Documentation</div>
 						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
 						<br />
-						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we have created douments outlining every corner of the project. Our documentation covers Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report on project completion. There are more areas our documentation covers on the project that I haven't listed.<br />
+						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we created douments outlining every corner of the project. Our documentation covered Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report upon project completion.<br />
 						<br />						
-						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did includes Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report on course completion.</p>
+						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did included Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report upon course completion.</p>
 					</div>
 
-					<div class="row">
-						<div class="head">Programming</div>
-						<p>CST Program:<br />
-						<br />
-						Free Time:</p>
-					</div>
 				</div>
 			</div>
 
@@ -241,9 +247,29 @@ else
 
 						<p class="project-links"><a href="http://dagameboyz.com">Website Home</a><span style="padding-left: 18px;"></span><a href="https://github.com/Gameboyz/theme.git">Source Code</a></p>
 
-						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> give some more details about the program.</p>
+						<p>In 2nd year at Camosun, I participated in the Capstone program. <a href="http://capstone.camosun.bc.ca">Our class website</a> and <a href="http://camosun.ca/news/press-releases/2015/june/capstone.html">press release</a> gives some more details about the program.</p>
 
-						<p><img id="gb-front" src="img/gameboyz-front.png" />Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.</p>
+						<p><img id="gb-front" class="float-right img-shadow-right" src="img/gameboyz-front.png" />Our 2015 Capstone Project is brought to you by <a href="http://youneeq.ca">Youneeq.ca</a> and the Gameboyz team. Throughout the 2nd year of the CST program, we built a brand new website for Youneeq to replace their old website, <a href="http://dagameboyz.ca">Gameboyz</a>. Youneeq gave our team full control and creative freedom to design and develop the website at our discretion, which we took full advantage of and are truly grateful for.<br />
+						<br />
+						So at this point, I'll stop copying and pasting from our documentation and do some real talk. I'll be going into details of what I did for the project, more so in the actual development of the project rather than the management part in this section.</p>
+
+						<p><img id="gb-old" class="float-right img-shadow-right" src="img/old-gameboyz.png" />I'll begin with the design of the website, it will give me a chance to show some pretty pictures. The old website hasn't seen a face lift since it debuted in the 90's. It certainly shows it's from the era of having blue links everywhere. I even had to use the wayback machine to get a screenshot. No matter though, the sponsor and our team wanted to replace the old site entirely, with a new design and a new CMS. <br />
+						<br />
+						For the design, the sponsor wanted something in the vain of IGN and Gamespot. However, I don't much care for the design of those websites, they are too cluttered and clumpsy in many areas. I find Polygon.com a very well designed website in terms of usability and focus in content delivery. The sponsor agreed once I showed polygon to him and gave reasons why it would be a better idea to take inspiration from there. Once we agreed, the next step was to find a Wordpress theme we could use.</p>
+
+						<p>The theme had to be free (as in freedom and free beer). It also needed a mobile view to help save work on that end of development. I eventually came across <a href="http://themezee.com/themes/momentous/">Momunetous Lite</a>. It's a theme utilizing the GPL and free of cost. The theme also had some good design cues that would set it apart from our inspiration. A mobile view was also included with the theme by using CSS media query. We found a great starting point and were ready to modify it to our liking.</p>
+
+						<p><img id="gb-front-design" class="float-left img-shadow-left" src="img/front_page.png" />With the front page, there are two main components in the gallery. The first component is a section that displays the four newest articles posted on the site. Most publication websites have some sort of feature section near or at the top of the page. At first, I tried having white text with a strong drop shadow and the article's featured image as the background in the tile. The text was hard to read in front of vivid coloured images and was too hard to read. After figuring out how to make the text more prominent, I made a filter element to overlay on top of the background. This solution helped make the text more readable. It was also cross-browser compatitable by using a linear-gradient for the overlay.<br />
+						<br />
+						The second part of the gallery is the body section contains the rest of the articles available on the website. There's not much difference compared to the feature section, apart from being more narrow and using a fixed height for every tile. I wasn't able to add everything I wanted in the tile, such as displaying the number of comments the article had or display the article's type/category.<br />
+						<br />
+						The front page, while functional, doesn't have much variety. Additional work needs to be done before the website hits production. The sponsor agreed and said that it would be ideal to create an appealing website upon launch.</p>
+
+						<p><img id="gb-news-design" class="float-left img-shadow-left" src="img/news_article.png" /><img id="gb-review-design" class="float-left img-shadow-left" src="img/review_article.png" />Moving on to articles, Wordpress doesn't have built-in functionality to use different layouts for different type of articles. After some research, our team figured we could implement it ourselves within the theme code base. The Wordpress documentation and google search were very helpful in finding the resources we needed. I found out that you can create additional panels in the Post interface in Wordpress (we had no WP experience before). It was straight forward in creating a custom panel that can embed additional HTML forms upon submitting an article.<br />
+						<br />
+						The next problem though was to find a way to store the additional info for each article that was submitted. Wordpress has a table in the database where we can store the info. I created a function to gather all the info from our custom panel on the post submit. I then encoded that data into JSON (sanitized of course) and stored it in the table as a key value pair.<br />
+						<br />
+						To retrieve that data when needed, I had to create an additional function that allowed that info to be accessed by Wordpress when the article is called by the system. It worked out perfectly. Any additions we wanted to make, just had to be adjusted in the panel form markup to be able to use the new feature(s).</p>
 
 					</div>
 
