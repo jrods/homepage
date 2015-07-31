@@ -41,21 +41,21 @@ else
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
 	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
-	<script async id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
-	
+	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
+
 <?php if( !$sticky ) { ?>	    
 
-	<script async id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
+	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
 
 	<script>
 	$(document).ready( function() {
 		$('#nav').scrollToFixed();
 	});
 	</script>
-
+	
 <?php } ?>
 
-	<script async id="app" src="js/app.js" type="text/javascript"></script>
+	<script id="app" src="js/app.js" type="text/javascript"></script>
 
 </head>
 	
@@ -151,9 +151,7 @@ else
 					
 					<div class="row">
 						<div class="head">Programming</div>
-						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was Python.<br /> 
-						<br />
-						In second term of the program, I was introduced to Object-Oriented programming with Java. Along with Java, I was also taught SQL, php, Visual Basic and C#.<br /> 
+						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was Python. In second term of the program, I was introduced to Object-Oriented programming with Java. Along with Java, I was also taught SQL, php, Visual Basic and C#.<br /> 
 						<br />
 						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught Erlang. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn Javascript. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
 						<br />
