@@ -20,6 +20,8 @@ if ( $ua ) {
 
 if ( isset($_SERVER['HTTP_USER_AGENT']) )
 	$browser = getBrowser();
+else
+	$browser = ['name' => ''];
 
 if ( $browser['name'] == 'Apple Safari' && in_array($browser['version'], ['6.1','7.0','8.0','8.0.7']))
 	$sticky = true;
