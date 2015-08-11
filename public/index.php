@@ -1,5 +1,7 @@
 <?php
 
+require('lib/Toml.php');
+
 include 'lib/browser_ua.php';
 
 /* old solution
@@ -16,7 +18,7 @@ if ( $ua ) {
 }
 */
 
-if ( isset($_SERVER['HTTP_USER_AGENT']) ) 
+if ( isset($_SERVER['HTTP_USER_AGENT']) )
 	$browser = getBrowser();
 
 if ( $browser['name'] == 'Apple Safari' && in_array($browser['version'], ['6.1','7.0','8.0','8.0.7']))
@@ -43,7 +45,7 @@ else
 
 	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 
-<?php if( !$sticky ) { ?>	    
+<?php if( !$sticky ) { ?>
 
 	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
 
@@ -52,35 +54,37 @@ else
 		$('#nav').scrollToFixed();
 	});
 	</script>
-	
+
 <?php } ?>
 
 	<script id="app" src="js/app.js" type="text/javascript"></script>
 
 </head>
-	
+
 <body>
 
 	<div id="wrap" class="">
 
-		<div id="header" class="">
+		<header>
 			<h1 id="title">Jared <span style="color: #fff;font-weight: 400;">Smith</span></h1>
 			<hr />
 			<h2 id="subtitle">Homepage</h2>
-		</div>
+		</header>
 
 		<div id="nav" class="<?php if($sticky) echo 'sticky' ?>">
-			<div id="nav-wrap" class="container">				
+			<div id="nav-wrap" class="container">
 				<ul>
 					<li><a href="#about">About</a>
 						<ul class="sub">
 							<li><a href="#contact">Contact</a></li>
+							<li><a href="#education">Education</a></li>
 							<li><a href="#skills">Skills</a></li>
+							<li><a href="#languages">Programming</a></li>
 							<li><a href="#software">Software</a></li>
 						</ul>
 					</li>
-					
-					<li><a href="#projects">Projects</a>						
+
+					<li><a href="#projects">Projects</a>
 						<ul class="sub slideup">
 							<li><a href="#completed">Completed</a>
 								<ul class="subsub">
@@ -88,9 +92,10 @@ else
 									<li><a href="#comp199">Comp199</a></li>
 								</ul>
 							</li>
-								
+
 							<li><a href="#in-progress">In-Progress</a>
 								<ul class="subsub">
+									<li><a href="#homepage">Homepage</a></li>	
 									<li><a href="#web-radio">Web Radio</a>
 										<ul class="subsub">
 											<li><a href="#web-radio-client">Client</a></li>
@@ -105,19 +110,24 @@ else
 								<ul class="subsub">
 									<li><a href="#3dgameengine">3D Game Engine</a></li>
 								</ul>
-							</li>													
+							</li>
 						</ul>
 					</li>
 
-					<li style="color: #e4a424;">My homepage is still a work-in-progress, more info to come.</li>
+					<li style="color: #e4a424;">My homepage is still a work-in-progress, more info to come.
+						<ul class="sub">
+							<li><a href="https://github.com/jrods/homepage/issues">Github Issue Tracker</a></li>
+						</ul>
+
+					</li>
 				</ul>
 
 			</div>
 		</div>
 
-		<div id="main" class="">
+		<article id="main" class="">
 
-			<div id="about" class="container">
+			<section id="about" class="container">
 				<h2>About Me</h2>
 
 				<p id="intro">Welcome to my personal website. I am a Software Engineer with experience in web development, application development and other areas in software engineering. In June 2015, I completed the Computer Systems Technology program offered by Camosun College. I started programming with the CST program and developed my skills both in school and in my free time.</p>
@@ -130,32 +140,53 @@ else
 				<br />
 				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, Language Design, Functional Programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring new topics I have little or no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. I would love to learn everything I can, but there's so much knowledge out there, it can be difficult to focus on one topic for awhile. It's not a matter of getting bored with one topic and moving on, but since there's so much to learn, it can be overwhelming. In the long run, the knowledge I gain will be beneficial in my future endeavors.</p>
 
-			</div>
+			</section>
 
-			<div id="contact" class="container">
+			<section id="contact" class="container">
 				<h2>Contact Info</h2>
-				
+
 				<p>Feel free to contact me at any of the links listed below. I'll try to get back to you right away.<br />
-				<br />											
+				<br />
 				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
-				<br />					
+				<br />
 				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
 				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a>
 				<span class="genericon genericon-linkedin-alt" style="color:#1784BB"></span>: <a href="https://ca.linkedin.com/pub/jared-smith/b2/36b/82">Jared Smith</a></p>
-			</div>
+			</section>
 
-			<div id="skills" class="container">
+			<section id="education" class="container">
+				<h2>Education</h2>
+
+				<h3>Camosun College: 2013 - 2015</h3>
+				<h4>Computer Systems Techology</h4>
+
+				<p><span style="font-size:20px;">Courses Completed:</span></p>
+				<div id="courses">
+				<?php
+				$courses = Toml::parseFile('share/courses.toml');
+
+				foreach($courses['courses'] as $key => $value) {
+					echo "<p>$key: $value</p>";
+				}
+				?>
+				</div>
+
+			</section>
+
+			<section id="skills" class="container">
 				<h2>Skills</h2>
-				
-				<div class="horizontal">					
-					
+
+				<div class="horizontal">
+
 					<div class="row">
 						<div class="head">Programming</div>
-						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was Python. In second term of the program, I was introduced to Object-Oriented programming with Java. Along with Java, I was also taught SQL, php, Visual Basic and C#.<br /> 
+						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was <b>Python</b>. In second term of the program, I was introduced to Object-Oriented programming with <b>Java</b>. Along with Java, I was also taught <b>SQL, php, Visual Basic</b> and <b>C#</b>.<br />
 						<br />
-						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught Erlang. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn Javascript. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
+						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught <b>Erlang</b>. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn <b>Javascript</b>. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
 						<br />
-						<b>Free Time</b>: </p>
+						<b>Free Time</b>: Once I finished school, I wanted to take some time to learn a new programming language. For a while, I had my eyes on <b>Rust</b>. Some of the features that grabbed my attention were: memory safety, concurrency, strongly typed and supported by Mozilla. Once I started programming with Rust, the first roadblock I had was the type system. It was mostly due to strings and being able to know what type of string you can use at certain points. I sort of understand it but I still need more time with the language. The second roadblock was the project structure. After looking around the web for some examples, I was able to figure out a simple project structure similar to what I have done in the past. I still find Rust an interesting language, but it will take some time to get in the mindset to coding in Rust. It's very different to what I'm use to, so for now I'll put it on the to-do list.<br />
+						<br />
+						Aftering exploring Rust, I decided to try another language that has less of a learning curve. I starting to look into <b>golang</b>, another fairly new language. Golang has some overlap in principles compared to Rust that caught me attention. Concurrency is one of golang's major features, along with being strongly typed (not as strong as Rust's type system). Golang has a similar ecosystem compared to Rust's cargo for third party libraries. I won't go into detail about my opinion of each ecosystems, mainly due to not having enough experience to share my critisms or praises. So far, I have enjoyed my time with golang. It's very similar to languages I already know, allowing me to easily pick it up. I will definitely spend more time with golang.</p>
 					</div>
 
 					<div class="row">
@@ -163,30 +194,80 @@ else
 						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
 						<br />
 						<a href="#comp199">Comp199</a>: This was the first project I managed. It wasn't meant for any use in production. Looking back at the project, there were many aspects I could have done better, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
-					</div>					
+					</div>
 
 					<div class="row">
 						<div class="head">Team Management</div>
 						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team member. I also made sure communication was happening within the team and would keep everyone up-to-date.<br />
 						<br />
 						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I had done (this project was before Capstone).</p>
-					</div>					
+					</div>
 
 					<div class="row">
 						<div class="head">Documentation</div>
 						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
 						<br />
 						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we created douments outlining every corner of the project. Our documentation covered Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report upon project completion.<br />
-						<br />						
+						<br />
 						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did included Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report upon course completion.</p>
 					</div>
 
 				</div>
-			</div>
+			</section>
 
-			<div id="software" class="container">
-				<h2>Software/Frameworks/Tools</h2>
+			<section id="languages" class="container">
+				<h2>Programming Languages</h2>
 				
+				<div class="">
+
+					<ul>
+						<li class="head">PHP</li>						
+					</ul>
+
+					<ul>
+						<li class="head">Java</li>
+					</ul>
+
+					<ul>
+						<li class="head">Javascript</li>
+					</ul>
+
+					<ul>
+						<li class="head">Python</li>
+					</ul>
+
+					<ul>
+						<li class="head">SQL</li>
+					</ul>
+
+					<ul>
+						<li class="head">Git</li>
+						<li>(Doesn't really belong here, but it's important to show that I have VCS experience)</li>
+					</ul>					
+
+					<ul>
+						<li class="head">C#.NET</li>
+					</ul>
+
+					<ul>
+						<li class="head">Erlang</li>
+					</ul>
+
+					<ul>
+						<li class="head">C lang</li>
+					</ul>
+
+					<ul>
+						<li class="head">VB.NET</li>
+					</ul>
+
+				</div>
+
+			</section>
+
+			<section id="software" class="container">
+				<h2>Software/Frameworks/Tools</h2>
+
 				<div class="vertical five-col">
 					<ul>
 						<li class="head">IDEs/Text Editors</li>
@@ -196,7 +277,7 @@ else
 						<li>Eclipse</li>
 						<li>Netbeans</li>
 					</ul>
-					
+
 					<ul>
 						<li class="head">Operating Systems</li>
 						<li>GNU/Linux</li>
@@ -219,27 +300,27 @@ else
 					</ul>
 
 					<ul>
-						<li class="head">Project Management</li>	
+						<li class="head">Project Management</li>
 						<li>Microsoft Project</li>
 						<li>Microsoft Visio</li>
 						<li>OpenProj</li>
 					</ul>
 
 					<ul>
-						<li class="head">Misc</li>	
+						<li class="head">Misc</li>
 						<li>Git/GitHub</li>
 						<li>Nginx</li>
 						<li>Apache Web</li>
-					</ul>					
+					</ul>
 				</div>
-			</div>
+			</section>
 
-			<div id="projects" class="container">
+			<section id="projects" class="container">
 				<h2>Projects</h2>
 
 				<div id="completed">
 					<h3>Completed</h3>
-					<div id="capstone" class="">						
+					<div id="capstone" class="">
 						<h4>Camosun Capstone 2015</h4>
 						<h4>Gameboyz Website</h4>
 
@@ -269,20 +350,29 @@ else
 						<br />
 						To retrieve that data when needed, I had to create an additional function that allowed that info to be accessed by Wordpress when the article is called by the system. It worked out perfectly. Any additions we wanted to make, just had to be adjusted in the panel form markup to be able to use the new feature(s).</p>
 
+						<p>Overall, the project was considered a success. Our sponsor liked what we delivered and our team enjoyed working on it. After the symposium, the sponsor was interested in continuing with the project. Our team arranged a meeting to discuss the future of Gameboyz. We compiled a list of improvements from our experience with the project, along with items/issues we didn't get too during the capstone period. Once our team found out that further development on Gameboyz would be volunteer work; we lost interest in not continuing with the project. It would have been nice to recieve a monetary reward for the work we've done and future work on the project, but I digress. Instead, I'll use all the expierence I gained from the project to use for future endeavours.</p>
+
+						<p>If you have any specific questions about the Gameboyz project, feel free to <a href="#contact">contact me</a> and I'll do my best to answer back.</p>
+
 					</div>
 
 					<div id="comp199" class="">
 						<h4>Camosun Comp199 Project</h4>
 						<h4>e-Commerce</h4>
-						<p></p>
+						<p>Coming soon.</p>
 					</div>
 				</div>
 
 				<div id="in-progress">
 					<h3>In-progress</h3>
+					<div id="homepage" class="">
+						<h4>This Homepage</h4>
+						<p>Coming soon.</p>
+					</div>
+
 					<div id="web-radio" class="">
 						<h4>Web Radio</h4>
-						<p>we will make all the monies</p>
+						<p>Coming soon (we will make all the monies).</p>
 					</div>
 				</div>
 
@@ -291,18 +381,21 @@ else
 					<div id="3dgameengine" class="">
 						<h4>3D Game Engine</h4>
 						<h4>OpenGL/Java</h4>
-						<p>will crush ue4</p>
+						<p>Coming soon (will crush ue4).</p>
 					</div>
 				</div>
 
+			</section>
+
+		</article>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2015 by Jared R. Smith</p>
 			</div>
+		</footer>
 
-		</div>
+	</div>
 
-		<div id="footer" class="">
-		</div>		
-
-	</div>	
-
-</body>	
+</body>
 </html>

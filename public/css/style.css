@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     border: 0;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
     font-size: 4.0em;
-    font-weight: 200;    
+    font-weight: 200;
 }
 h2 {
     font-size: 2.2em;
@@ -58,6 +58,9 @@ h2 {
 h3 {
     font-size: 1.8em;
     font-weight: 400;
+}
+h3 {
+    padding: 12px 24px;
 }
 h4 {
     font-size: 1.4em;
@@ -91,6 +94,12 @@ th {
 
 /* UI
    ------------------------------ */
+.blue {
+  color: #eee;
+}
+.green {
+  color: #000;
+}
 .sticky {
     z-index: 10000;
     position: sticky;
@@ -140,7 +149,7 @@ th {
     padding: 12px 0 0;
     vertical-align: top;
 }
-.vertical li {    
+.vertical li {
     padding: 3px 0 ;
     width: 100%;
     text-align: center;
@@ -155,11 +164,11 @@ th {
 
 .img-shadow-left {
     margin: 0 24px 24px 0;
-    box-shadow: 4px 4px 24px #999;   
+    box-shadow: 4px 4px 24px #999;
 }
 .img-shadow-right {
     margin: 0 0 24px 24px;
-    box-shadow: -4px 4px 24px #999;    
+    box-shadow: -4px 4px 24px #999;
 }
 
 /* Main
@@ -173,12 +182,12 @@ th {
     width: 90%;
     box-sizing: border-box;
 }
-#header {
-    padding: 180px 0;
+header {
+    padding: 18vh 0;
     background-color: #6D4084;
     text-align: center;
 }
-#header h2 {
+header h2 {
     font-size: 3.4em;
     font-weight: 200;
 }
@@ -188,9 +197,14 @@ th {
 #subtitle {
     color: #fff;
 }
-#footer {
+footer {
     padding: 60px 0;
     background-color: #6D4084;
+}
+footer p {
+    width: 100%;
+    color: #fff;
+    text-align: right;
 }
 
 /* Nav bar
@@ -199,10 +213,10 @@ th {
     border-top: 4px solid #6D4084;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
-
 }
 #nav * {
     font-family: 'Fira Sans';
+    font-size: 18px;
 }
 #nav-wrap {
     display: block;
@@ -227,7 +241,7 @@ th {
 }
 #nav-wrap li > ul > li {
     padding: 12px;
-    width: 120px;
+    min-width: 140px;
 }
 #nav-wrap li:hover {
     background-color: #555;
@@ -260,7 +274,7 @@ th {
     min-height: 100vh;
     background-color: #fff;
 }
-#main > div, #main > article {
+#main > div, #main > section {
     padding: 48px 0 0;
     background-color: #fff;
 }
@@ -285,11 +299,42 @@ th {
     margin-left: 18px;
 }
 
+#education {
+
+}
+#education h3 {
+    color: #91BD36;
+}
+#education h4 {
+    color: #5BA7CB;
+}
+#courses {
+    margin: 0 auto;
+    width: 94%;
+}
+#courses p {
+    border-width: 6px;
+    width: 33%;
+}
+
 #skills {
 
 }
 #skills tr:nth-child(even) > * {
     padding: 0 12px 24px 0;
+}
+
+#languages {
+
+}
+#languages ul {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    width: 75%;
+}
+#languages li {
+    display: block;
 }
 
 #software {
@@ -340,9 +385,6 @@ th {
 #projects > div > div {
     padding: 0 0 12px;
 }
-#projects h3 {
-    padding: 12px 24px;
-}
 
 /* Mobile
    ------------------------------ */
@@ -368,4 +410,3 @@ th {
 only screen and (min-resolution:144dpi) {
 
 }
-
