@@ -4,20 +4,6 @@ require('lib/Toml.php');
 
 include 'lib/browser_ua.php';
 
-/* old solution
-if( isset($_SERVER['HTTP_USER_AGENT']) ) {
-	$ua = $_SERVER['HTTP_USER_AGENT'];
-}
-
-//$ua = false;
-
-if ( $ua ) {
-	$sticky = in_array(browser_ua($ua), ['Firefox','Safari']);
-} else {
-	$sticky = false;
-}
-*/
-
 if ( isset($_SERVER['HTTP_USER_AGENT']) )
 	$browser = getBrowser();
 else
@@ -138,7 +124,8 @@ else
 				<br />
 				If there are any problems with my homepage, please don't hesitate to tell me. You may submit an issue if you have a github account at the <a href="https://github.com/jrods/homepage/issues">homepage's issue tracker</a>. Or you may email me the details, <a href="#contact">email info is located here</a>. I will also accept any feedback on my website through the contact channels I've listed before or in the contact section.</p>
 
-				<p id="summary">To give a summary about myself, I'm a reserved, quiet individual. My interests include technology, computers, programming, music, video games, graphic design and automotive. I do have more interests, but the ones I listed are what I mostly spend my free time on. Since the CST program, my interest in programming has increased significantly. It's an activity I really enjoy doing. Programming gives me a sense to express creativity, thought process and control.<br />
+				<p>
+				My interests include technology, computers, programming, music, video games, graphic design and automotive. I do have more interests, but the ones I listed are what I mostly spend my free time on. Since the CST program, my interest in programming has increased significantly. It's an activity I really enjoy doing. Programming gives me a sense to express creativity, thought process and control.<br />
 				<br />
 				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, Language Design, Functional Programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring new topics I have little or no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. I would love to learn everything I can, but there's so much knowledge out there, it can be difficult to focus on one topic for awhile. It's not a matter of getting bored with one topic and moving on, but since there's so much to learn, it can be overwhelming. In the long run, the knowledge I gain will be beneficial in my future endeavors.</p>
 
