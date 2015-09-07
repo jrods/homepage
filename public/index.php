@@ -38,9 +38,23 @@ else
 
 	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
 
+	<script id="myscroll" src="js/lib/sticky-element-0.3.js" type="application/javascript"></script>
+
 	<script>
 	$(document).ready( function() {
-		$('#nav').scrollToFixed();
+		//$('#nav').scrollToFixed();
+	});
+	</script>
+
+	<script>
+	window.addEventListener('DOMContentLoaded', function (event) {
+		stickyElement('#nav', 0);
+
+		stickyElement('#about h2', 52);
+
+		stickyElement('#contact h2', 104);
+
+		stickyElement('#skills h2', 156);
 	});
 	</script>
 
