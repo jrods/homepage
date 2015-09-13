@@ -38,7 +38,7 @@ else
 
 	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
 
-	<script id="myscroll" src="js/lib/sticky-element-0.3.js" type="application/javascript"></script>
+	<script id="myscroll" src="js/lib/sticky-element-0.4.js" type="application/javascript"></script>
 
 	<script>
 	$(document).ready( function() {
