@@ -2,23 +2,6 @@
 
 require('lib/Toml.php');
 
-/*
-include 'lib/browser_ua.php';
-
-if ( isset($_SERVER['HTTP_USER_AGENT']) )
-	$browser = getBrowser();
-else
-	$browser = ['name' => ''];
-
-if ( $browser['name'] == 'Apple Safari' && in_array($browser['version'], ['6.1','7.0','8.0','8.0.7']))
-	$sticky = true;
-elseif ( $browser['name'] == 'Mozilla Firefox' && floatval($browser['version']) > 33.0 )
-	$sticky = true;
-elseif ( $browser['name'] == 'Midori' && in_array($browser['version'], ['0.4','0.4.1','0.5']) )
-	$sticky = true;
-else
-	$sticky = false;
-*/
 ?>
 
 <!DOCTYPE html>
@@ -34,17 +17,7 @@ else
 
 	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 
-<?php // if( !$sticky ) { ?>
-
-	<script id="scrolltofixed" src="js/lib/jquery-scrolltofixed-min.js" type="application/javascript"></script>
-
 	<script id="myscroll" src="js/lib/sticky-element-0.4.js" type="application/javascript"></script>
-
-	<script>
-	$(document).ready( function() {
-		//$('#nav').scrollToFixed();
-	});
-	</script>
 
 	<script>
 	window.addEventListener('DOMContentLoaded', function (event) {
@@ -57,8 +30,6 @@ else
 		stickyElement('#skills h2', 156);
 	});
 	</script>
-
-<?php // } ?>
 
 	<script id="app" src="js/app.js" type="text/javascript"></script>
 
@@ -74,7 +45,7 @@ else
 			<h2 id="subtitle">Homepage</h2>
 		</header>
 
-		<div id="nav" class="<?php // if($sticky) echo 'sticky' ?>">
+		<div id="nav">
 			<div id="nav-wrap" class="container">
 				<ul>
 					<li><a href="#about">About</a>
