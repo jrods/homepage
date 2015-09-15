@@ -17,7 +17,7 @@ require('lib/Toml.php');
 
 	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
 
-	<script id="myscroll" src="js/lib/sticky-element-0.4.js" type="application/javascript"></script>
+	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript"></script>
 
 	<script>
 	window.addEventListener('DOMContentLoaded', function (event) {

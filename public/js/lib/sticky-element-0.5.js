@@ -6,12 +6,12 @@ function stickyElement(elementQuery, position) {
 	var posElement        = element.getBoundingClientRect();
 	var elementHeight     = posElement.bottom - posElement.top;
 
-	var posParent  = element.parentElement.getBoundingClientRect();
+	var posParent, posShim;
 
 	var shim          = document.createElement('div');
 	shim.style.height = elementHeight + 'px';
 
-	var setSticky = (function(set) {
+	var makeSticky = (function (set) {
 		if (set) {
 			elementNodeParent.insertBefore(shim, element);
 			element.style.position = 'fixed';
@@ -21,32 +21,36 @@ function stickyElement(elementQuery, position) {
 		} else {
 			elementNodeParent.removeChild(shim);
 			element.style.position = 'static';
-			element.style.top      = null;
+			element.style.top      = null; // safari doesn't like unset
 			element.style.width    = 'auto';
 			element.style.zIndex   = null;
 		}
 	});
 
-	// initialization when firsted called on document load.
-	if (element.style.position != 'fixed') {
-		if (posElement.top <= position && posParent.bottom >= position + elementHeight) {
-			setSticky(true);				
-		}
-	}
-
-	window.addEventListener('scroll', function () {
-
+	var updateElementPositions = (function () {
 		posElement = element.getBoundingClientRect();
-		var posShim = shim.getBoundingClientRect();
-		var posParent = element.parentElement.getBoundingClientRect();
+		posShim    = shim.getBoundingClientRect();
+		posParent  = element.parentElement.getBoundingClientRect();
+	});
 
+	var setSticky = (function () {
+		// the reason for not using an if () {} else {} when checking for fixed position
+		// is the first if statement (element.style.position != 'fixed') doesn't check for correct 
+		// positioning like it would when the sticky element is fixed (if that makes any sense)
+		// this way will allow a check when not fixed and fixed in the same function call
 		if (element.style.position != 'fixed') {
-			if (posElement.top <= position && posParent.bottom >= position + elementHeight) {
-				setSticky(true);				
+			updateElementPositions();
+
+			if (posElement.top <= position) {
+				makeSticky(true);				
 			}
-		} else {
+		} 
+
+		if (element.style.position == 'fixed') {
+			updateElementPositions();
+
 			if (posShim.top >= posElement.top) {
-				setSticky(false);
+				makeSticky(false);
 			}
 
 			if (posParent.bottom >= position) {
@@ -60,7 +64,6 @@ function stickyElement(elementQuery, position) {
 
 				if (posElement.bottom <= 0) {
 					// stops the element from updating it's position, for optimization
-
 					if (posParent.bottom >= posElement.top) {
 						// condition happens when scrolling down and sticky element
 						// will be coming into the viewport
@@ -76,4 +79,8 @@ function stickyElement(elementQuery, position) {
 			}
 		}
 	});
+
+	setSticky();
+
+	window.addEventListener('scroll', setSticky, true);
 };
