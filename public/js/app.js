@@ -1,40 +1,12 @@
 window.addEventListener('DOMContentLoaded', function (event) {
-	/*
-	var group2 = document.getElementById('group-2');
-	var dir = 0;    
-	window.addEventListener('wheel', function (event) {
+	console.log('based');
 
-	if (event.deltaY < 0) {
-		dir = 'up';
-	} else {
-		dir = 'down';
-	}
-	console.log(dir);
-	console.log(event);
-	});
-	*/
+	stickyElement('#nav', 0);
 
-	//
-	/*
-	var nav = document.querySelector('#nav');
+	stickyElement('#about h2', 52);
 
-	var observer = new MutationObserver( function(mutations) {
-		for (var i = 0; i < mutations.length; i++) {
-			if ( mutations[i].attributeName != 'style' ) {
-				continue;
-			}
+	stickyElement('#contact h2', 104);
 
-			console.log(mutations[i]);
-			return;
-		}
+	stickyElement('#skills h2', 156);
 
-	});
-
-	var config = { attributes: true, characterData: true };
-
-	observer.observe(nav, config);
-	
-
-	console.log(document.querySelector('#nav'));
-	*/
 });

@@ -58,23 +58,25 @@ function stickyElement(elementQuery, position) {
 				element.style.zIndex = '10000';
 			}
 			
-			if (posParent.bottom <= position) {
+			if (posParent.bottom <= position + elementHeight) {
 				// happens when the sticky element has reached its parent's 
 				// bottom position, sticky element will now appear it's being carried
+
+				var newPosition = posParent.bottom - elementHeight;
 
 				if (posElement.bottom <= 0) {
 					// stops the element from updating it's position, for optimization
 					if (posParent.bottom >= posElement.top) {
 						// condition happens when scrolling down and sticky element
-						// will be coming into the viewport
-						element.style.top = posParent.bottom + 'px';
+						// will be coming into the viewport	
+						element.style.top = newPosition + 'px';
 						element.style.zIndex = null;						
 					}
-	
+					
 					return; // no need to carry on in the function
 				}
 
-				element.style.top = posParent.bottom + 'px';
+				element.style.top = newPosition + 'px';
 				element.style.zIndex = null;				
 			}
 		}

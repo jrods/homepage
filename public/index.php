@@ -15,21 +15,8 @@ require('lib/Toml.php');
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
 	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
-	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript"></script>
-
-	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript"></script>
-
-	<script>
-	window.addEventListener('DOMContentLoaded', function (event) {
-		stickyElement('#nav', 0);
-
-		stickyElement('#about h2', 52);
-
-		stickyElement('#contact h2', 104);
-
-		stickyElement('#skills h2', 156);
-	});
-	</script>
+	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript" async ></script>
+	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript" async ></script>
 
 	<script id="app" src="js/app.js" type="text/javascript"></script>
 
