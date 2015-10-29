@@ -15,10 +15,13 @@ require('lib/Toml.php');
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
 	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
-	<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript" ></script>
-	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript" ></script>
+	<script id="app" src="js/app.js" type="text/javascript" defer></script>
 
-	<script id="app" src="js/app.js" type="text/javascript"></script>
+	<!--<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript" ></script>-->
+	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript" defer></script>
+
+	<link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+	<script type="text/javascript" src="js/lib/l10n.js" defer></script>
 
 </head>
 
@@ -135,48 +138,6 @@ require('lib/Toml.php');
 
 			</section>
 
-			<section id="skills" class="container">
-				<h2>Skills</h2>
-
-				<div class="horizontal">
-
-					<div class="row">
-						<div class="head">Programming</div>
-						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was <b>Python</b>. In second term of the program, I was introduced to Object-Oriented programming with <b>Java</b>. Along with Java, I was also taught <b>SQL, php, Visual Basic</b> and <b>C#</b>.<br />
-						<br />
-						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught <b>Erlang</b>. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn <b>Javascript</b>. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
-						<br />
-						<b>Free Time</b>: Once I finished school, I wanted to take some time to learn a new programming language. For a while, I had my eyes on <b>Rust</b>. Some of the features that grabbed my attention were: memory safety, concurrency, strongly typed and supported by Mozilla. Once I started programming with Rust, the first roadblock I had was with the type system. It was mostly due to strings and being able to know what type of string you can use at certain points. I sort of understand it but I still need more time with the language. The second roadblock was the project structure. After looking around the web for some examples, I was able to figure out a simple project structure similar to what I have done in the past. I still find Rust an interesting language, but it will take some time to get in the mindset to coding in Rust. It's very different to what I'm use to, so for now I'll put it on the to-do list.<br />
-						<br />
-						Aftering exploring Rust, I decided to try another language that has less of a learning curve. I starting to look into <b>golang</b>, another fairly new language. Golang has some overlap in principles compared to Rust that caught my attention. Concurrency is one of golang's major features, along with being strongly typed (not as strong as Rust's type system). Golang has a similar ecosystem compared to Rust's cargo for third party libraries. I won't go into detail about my opinion of each ecosystems, mainly due to not having enough experience to share my critisms or praises. So far, I have enjoyed my time with golang. It's very similar to languages I already know, allowing me to easily pick it up. I will definitely spend more time with golang.</p>
-					</div>
-
-					<div class="row">
-						<div class="head">Project Management</div>
-						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
-						<br />
-						<a href="#comp199">Comp199</a>: This was the first project I managed. It wasn't meant for any use in production. Looking back at the project, there were many aspects I could have done better, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
-					</div>
-
-					<div class="row">
-						<div class="head">Team Management</div>
-						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team member. I also made sure communication was happening within the team and would keep everyone up-to-date.<br />
-						<br />
-						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I had done (this project was before Capstone).</p>
-					</div>
-
-					<div class="row">
-						<div class="head">Documentation</div>
-						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
-						<br />
-						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we created douments outlining every corner of the project. Our documentation covered Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report upon project completion.<br />
-						<br />
-						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did included Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report upon course completion.</p>
-					</div>
-
-				</div>
-			</section>
-
 			<section id="languages" class="container">
 				<h2>Programming Languages</h2>
 				
@@ -225,6 +186,48 @@ require('lib/Toml.php');
 
 				</div>
 
+			</section>
+
+			<section id="skills" class="container">
+				<h2>Skills</h2>
+
+				<div class="horizontal">
+
+					<div class="row">
+						<div class="head">Programming</div>
+						<p><b>CST Program</b>: This is where I started programming; I had no experience before I enrolled into the CST program. The first language I started using was <b>Python</b>. In second term of the program, I was introduced to Object-Oriented programming with <b>Java</b>. Along with Java, I was also taught <b>SQL, php, Visual Basic</b> and <b>C#</b>.<br />
+						<br />
+						In the third term, it was more in depth compared to the last term, but in my application networking course, I was taught <b>Erlang</b>. I found it quite interesting and enjoyible to use, once I got the hang of the different syntax and sementics of the language. During development of the Comp199 project, I started to learn <b>Javascript</b>. At this point, all the languages taught in the program were part of the course(s). Javascript would be the first language I would have to teach myself. Luckily, Javascript shares many common traits with the languages I have already experienced, making it straight forward for me to grasp.<br />
+						<br />
+						<b>Free Time</b>: Once I finished school, I wanted to take some time to learn a new programming language. For a while, I had my eyes on <b>Rust</b>. Some of the features that grabbed my attention were: memory safety, concurrency, strongly typed and supported by Mozilla. Once I started programming with Rust, the first roadblock I had was with the type system. It was mostly due to strings and being able to know what type of string you can use at certain points. I sort of understand it but I still need more time with the language. The second roadblock was the project structure. After looking around the web for some examples, I was able to figure out a simple project structure similar to what I have done in the past. I still find Rust an interesting language, but it will take some time to get in the mindset to coding in Rust. It's very different to what I'm use to, so for now I'll put it on the to-do list.<br />
+						<br />
+						Aftering exploring Rust, I decided to try another language that has less of a learning curve. I starting to look into <b>golang</b>, another fairly new language. Golang has some overlap in principles compared to Rust that caught my attention. Concurrency is one of golang's major features, along with being strongly typed (not as strong as Rust's type system). Golang has a similar ecosystem compared to Rust's cargo for third party libraries. I won't go into detail about my opinion of each ecosystems, mainly due to not having enough experience to share my critisms or praises. So far, I have enjoyed my time with golang. It's very similar to languages I already know, allowing me to easily pick it up. I will definitely spend more time with golang.</p>
+					</div>
+
+					<div class="row">
+						<div class="head">Project Management</div>
+						<p><a href="#capstone">Capstone 2015</a>: I was responsible for directing the Gameboyz project by determining what features were in-scope and out-of-scope, timeframe of feature implementation, scheduling weekly meetings and managing the Version Control System.<br />
+						<br />
+						<a href="#comp199">Comp199</a>: This was the first project I managed. It wasn't meant for any use in production. Looking back at the project, there were many aspects I could have done better, but you have to start somewhere. There are more details in the completed project section. I was responsible for website features and team management.</p>
+					</div>
+
+					<div class="row">
+						<div class="head">Team Management</div>
+						<p><a href="#capstone">Capstone 2015</a>: Along with managing the project, I also managed the team members. I would divide work up based on an individual feature and assigned that feature to a team member. I also made sure communication was happening within the team and would keep everyone up-to-date.<br />
+						<br />
+						<a href="#comp199">Comp199</a>: With this project, it became a very extreme programming approach to development. There wasn't much structure for assigning work to other team members, as we just worked on whatever part of the project that needed to be done. It was a new experience for me when it came to managing a project, compared to previous school projects I had done (this project was before Capstone).</p>
+					</div>
+
+					<div class="row">
+						<div class="head">Documentation</div>
+						<p><b>CST Program</b>: In the second year of the CST Program, documentation is a major part of the curriculum. Comp 230 is the Design and System Analysis course that teaches techniquies in system analysis, design and specification of a project. Engl 170 is a course that teaches about technical writting. Engl 273 and Comp 297, 298, 299 are all in conjunction with the Capstone project.<br />
+						<br />
+						<a href="#capstone">Capstone 2015</a>: Throughout our Capstone project, we created douments outlining every corner of the project. Our documentation covered Project Purpose, Business Requirements, Project Scope, Project Management Plan, System Architecture, Use Cases, Structured Walkthroughs with Peers outside the team, User Manual, Weekly Status Reports and a Final Report upon project completion.<br />
+						<br />
+						<a href="#comp199">Comp199</a>: This project didn't have as much documentation compared to the Capstone project. The documentation that we did included Weekly Status Reports, User Manual, Experiences, Improvements and a Final Report upon course completion.</p>
+					</div>
+
+				</div>
 			</section>
 
 			<section id="software" class="container">
