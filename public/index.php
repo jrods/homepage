@@ -27,7 +27,7 @@ require('lib/Toml.php');
 	<div id="wrap" class="">
 
 		<header>
-			<h1 id="title">Jared <span style="color: #fff;font-weight: 400;">Smith</span></h1>
+			<h1 id="title">Jared Smith</h1>
 			<hr />
 			<h2 id="subtitle">Homepage</h2>
 		</header>
@@ -88,6 +88,18 @@ require('lib/Toml.php');
 
 		<article id="main" class="">
 
+			<section id="contact" class="container">
+				<h2>Contact Info</h2>
+
+				<p>Feel free to contact me at any of the links listed below. I'll try to get back to you right away.<br />
+				<br />
+				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
+				<br />
+				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
+				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a>
+				<span class="genericon genericon-linkedin-alt" style="color:#1784BB"></span>: <a href="https://ca.linkedin.com/pub/jared-smith/b2/36b/82">Jared Smith</a></p>
+			</section>
+
 			<section id="about" class="container">
 				<h2>About Me</h2>
 
@@ -102,18 +114,6 @@ require('lib/Toml.php');
 				<br />
 				My current strengths and knowledge with programming are Web Development, Graphic Design, Databases, Object-Oriented and Imparitive Programming. There are lots of areas that I wish to explore like Operating Systems, Language Design, Functional Programming, etc but I do find those areas quite intimidating at my current level. As I spend more time reading, experimenting and exploring new topics I have little or no knowledge in, it becomes a matter of applying myself to spend the time in learning those topics. I would love to learn everything I can, but there's so much knowledge out there, it can be difficult to focus on one topic for awhile. It's not a matter of getting bored with one topic and moving on, but since there's so much to learn, it can be overwhelming. In the long run, the knowledge I gain will be beneficial in my future endeavors.</p>
 
-			</section>
-
-			<section id="contact" class="container">
-				<h2>Contact Info</h2>
-
-				<p>Feel free to contact me at any of the links listed below. I'll try to get back to you right away.<br />
-				<br />
-				<b>E-mail</b> : jared smith jrod <span style="font-size:12px;">(replace spaces with dots, then add <b>@gmail.com</b> to the end)</span><br />
-				<br />
-				<span class="genericon genericon-github"></span>: <a href="https://github.com/jrods">@jrods</a>
-				<span class="genericon genericon-twitter"></span>: <a href="https://twitter.com/j_rod_s">@j_rod_s</a>
-				<span class="genericon genericon-linkedin-alt" style="color:#1784BB"></span>: <a href="https://ca.linkedin.com/pub/jared-smith/b2/36b/82">Jared Smith</a></p>
 			</section>
 
 			<section id="education" class="container">
