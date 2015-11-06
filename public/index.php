@@ -12,12 +12,12 @@ require('lib/Toml.php');
 
 	<meta charset="UTF-8" />
 
+	<meta name="viewport" content="width=device-width">
 	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
 	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet"></link>
 
 	<script id="app" src="js/app.js" type="text/javascript" defer></script>
 
-	<!--<script id="jquery" src="js/lib/jquery-2.1.4.min.js" type="application/javascript" ></script>-->
 	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript" defer></script>
 
 	<link rel="prefetch" type="application/l10n" href="data/locales.ini" />
