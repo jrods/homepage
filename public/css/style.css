@@ -100,12 +100,6 @@ th {
 .green {
   color: #000;
 }
-.sticky {
-    z-index: 10000;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
 .genericon {
     vertical-align: text-bottom;
     margin-right: 4px;
