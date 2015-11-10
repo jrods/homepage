@@ -13,8 +13,9 @@ require('lib/Toml.php');
 	<meta charset="UTF-8" />
 
 	<meta name="viewport" content="width=device-width">
-	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet" defer></link>
-	<link id="fonts" media="all" type="text/css" href="css/fonts.css" rel="stylesheet" defer></link>
+	<link id="homepage-style" media="all" type="text/css" href="css/style.css" rel="stylesheet"></link>
+	<link id="fonts" rel="stylesheet" href="css/fonts.css" media="none" onload="if(media!='all')media='all'">
+	<noscript><link id="fonts" rel="stylesheet" href="css/fonts.css"></noscript>
 
 	<script id="app" src="js/app.js" type="text/javascript" defer></script>
 
