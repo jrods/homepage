@@ -19,7 +19,7 @@ require('lib/Toml.php');
 
 	<script id="app" src="js/app.js" type="text/javascript" defer></script>
 
-	<script id="myscroll" src="js/lib/sticky-element-0.5.js" type="application/javascript" defer></script>
+	<script id="myscroll" src="js/lib/pure-sticky.js" type="application/javascript" defer></script>
 
 	<link rel="prefetch" type="application/l10n" href="data/locales.ini" defer />
 	<script type="text/javascript" src="js/lib/l10n.js" defer></script>

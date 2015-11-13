@@ -1,4 +1,14 @@
-function stickyElement(elementQuery, position) {
+/**
+ * pure-sitcky.js
+ * Version: 1
+ * Author: Jared Smith <jared.smith.jrod@gmail.com> 
+ * Github: @jrods
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. 
+ */
+function pureSticky(elementQuery, position) {
 	"use strict";
 
 	var element           = document.querySelector(elementQuery);
@@ -20,10 +30,7 @@ function stickyElement(elementQuery, position) {
 			element.style.zIndex   = '10000';
 		} else {
 			elementNodeParent.removeChild(shim);
-			element.style.position = 'static';
-			element.style.top      = null; // safari doesn't like unset
-			element.style.width    = 'auto';
-			element.style.zIndex   = null;
+			element.removeAttribute("style");
 		}
 	});
 
@@ -40,28 +47,26 @@ function stickyElement(elementQuery, position) {
 		// this way will allow a check when not fixed and fixed in the same function call
 		if (element.style.position != 'fixed') {
 			updateElementPositions();
-
 			if (posElement.top <= position) {
-				makeSticky(true);				
+				makeSticky(true);
 			}
 		} 
 
 		if (element.style.position == 'fixed') {
 			updateElementPositions();
-
 			if (posShim.top >= posElement.top) {
 				makeSticky(false);
+				return;
 			}
 
 			if (posParent.bottom >= position) {
-				element.style.top = position + 'px';
+				element.style.top    = position + 'px';
 				element.style.zIndex = '10000';
 			}
 			
 			if (posParent.bottom <= position + elementHeight) {
 				// happens when the sticky element has reached its parent's 
 				// bottom position, sticky element will now appear it's being carried
-
 				var newPosition = posParent.bottom - elementHeight;
 
 				if (posElement.bottom <= 0) {
@@ -69,14 +74,14 @@ function stickyElement(elementQuery, position) {
 					if (posParent.bottom >= posElement.top) {
 						// condition happens when scrolling down and sticky element
 						// will be coming into the viewport	
-						element.style.top = newPosition + 'px';
+						element.style.top    = newPosition + 'px';
 						element.style.zIndex = null;						
 					}
 					
-					return; // no need to carry on in the function
+					return;
 				}
 
-				element.style.top = newPosition + 'px';
+				element.style.top    = newPosition + 'px';
 				element.style.zIndex = null;				
 			}
 		}
