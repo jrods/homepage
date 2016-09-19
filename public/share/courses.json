@@ -1,0 +1,39 @@
+{
+    "courses": [
+        ["Comp 112", "Intro to Computer Systems"],
+        ["Comp 140", "HCI"],
+        ["Comp 176", "Operating Systems"],
+        ["Engl 170", "Technical Communications 1"],
+        ["Math 163", "Mathematics for Computing"],
+
+        ["Busi 143", "Foundation of eBusiness"],
+        ["Comp 132", "Object-Oriented Programming in Java"],
+        ["Comp 170", "Computer/Network Operations"],
+        ["Comp 183", "Computer Architecture"],
+        ["Comp 155", "Database Concepts"],
+
+        ["Comp 139", "Applied Programming"],
+        ["Comp 157", "Windows Applications"],
+        ["Comp 173", "Networking Programming"],
+        ["Comp 235", "Software Engineering"],
+        ["Comp 199", "Year One Project"],
+
+        ["Comp 230", "Systems Analysis and Design"],
+        ["Comp 288", "Embedded Systems"],
+        ["Comp 241", ".NET Web Applications"],
+        ["Comp 270", "Computer Operations"],
+        ["Comp 272", "Intro to Data Communications"],
+        ["Comp 297", "Capstone Project Prep"],
+
+        ["Comp 244", "Distrubuted Systems Networking"],
+        ["Comp 259", "Database Development Tools"],
+        ["Comp 249", "Oracle Database Advanced"],
+        ["Comp 289", "Concurrent Programming"],
+        ["Comp 298", "Capstone Project Analysis"],
+
+        ["Engl 273", "Technical Communication 2"],
+        ["Comp 275", "System Security"],
+        ["Comp 299", "Capstone Implementation"],
+        ["Tech 290", "Symposium"]
+    ]
+}

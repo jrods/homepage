@@ -1,9 +1,3 @@
-<?php
-
-require('lib/Toml.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -22,8 +16,7 @@ require('lib/Toml.php');
 	<script id="myscroll" src="js/lib/pure-sticky.js" type="application/javascript" defer></script>
 
 	<link rel="prefetch" type="application/l10n" href="data/locales.ini" defer />
-	<script type="text/javascript" src="js/lib/l10n.js" defer></script>
-
+	<script type="text/javascript" src="js/lib/l10n.js" defer ></script>
 </head>
 
 <body>
@@ -36,11 +29,11 @@ require('lib/Toml.php');
 			<h2 id="subtitle">Homepage</h2>
 		</header>
 
-		<div id="nav">
+		<nav id="nav">
 			<div id="nav-wrap" class="container">
 				<ul>
 					<li><a href="#about">About</a>
-						<ul class="sub">
+						<ul class="sub-menu">
 							<li><a href="#contact">Contact</a></li>
 							<li><a href="#education">Education</a></li>
 							<li><a href="#skills">Skills</a></li>
@@ -50,19 +43,19 @@ require('lib/Toml.php');
 					</li>
 
 					<li><a href="#projects">Projects</a>
-						<ul class="sub slideup">
+						<ul class="sub-menu slideup">
 							<li><a href="#completed">Completed</a>
-								<ul class="subsub">
+								<ul class="sub-menu">
 									<li><a href="#capstone">Capstone</a></li>
 									<li><a href="#comp199">Comp199</a></li>
 								</ul>
 							</li>
 
 							<li><a href="#in-progress">In-Progress</a>
-								<ul class="subsub">
-									<li><a href="#homepage">Homepage</a></li>	
+								<ul class="sub-menu">
+									<li><a href="#homepage">Homepage</a></li>
 									<li><a href="#web-radio">Web Radio</a>
-										<ul class="subsub">
+										<ul class="sub-menu">
 											<li><a href="#web-radio-client">Client</a></li>
 											<li><a href="#web-radio-server">Server</a></li>
 											<li><a href="#web-radio-view">Listener</a></li>
@@ -72,7 +65,7 @@ require('lib/Toml.php');
 							</li>
 
 							<li><a href="#experiments">Experiments</a>
-								<ul class="subsub">
+								<ul class="sub-menu">
 									<li><a href="#3dgameengine">3D Game Engine</a></li>
 								</ul>
 							</li>
@@ -80,15 +73,68 @@ require('lib/Toml.php');
 					</li>
 
 					<li style="color: #e4a424;">My homepage is still a work-in-progress, more info to come.
-						<ul class="sub">
+						<ul class="sub-menu">
 							<li><a href="https://github.com/jrods/homepage/issues">Github Issue Tracker</a></li>
 						</ul>
 
 					</li>
 				</ul>
-
 			</div>
-		</div>
+
+			<div id="mobile-nav-wrap">
+				<input type="checkbox" id="hamburger-menu"></input>
+				<label for="hamburger-menu" class="genericon genericon-menu"></label>
+
+				<ul>
+					<li><a href="#about">About</a>
+						<ul class="sub-menu">
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#languages">Programming</a></li>
+							<li><a href="#software">Software</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#projects">Projects</a>
+						<ul class="sub-menu slideup">
+							<li><a href="#completed">Completed</a>
+								<ul class="sub-menu">
+									<li><a href="#capstone">Capstone</a></li>
+									<li><a href="#comp199">Comp199</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#in-progress">In-Progress</a>
+								<ul class="sub-menu">
+									<li><a href="#homepage">Homepage</a></li>
+									<li><a href="#web-radio">Web Radio</a>
+										<ul class="sub-menu">
+											<li><a href="#web-radio-client">Client</a></li>
+											<li><a href="#web-radio-server">Server</a></li>
+											<li><a href="#web-radio-view">Listener</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="#experiments">Experiments</a>
+								<ul class="sub-menu">
+									<li><a href="#3dgameengine">3D Game Engine</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li style="color: #e4a424;">My homepage is still a work-in-progress, more info to come.
+						<ul class="sub-menu">
+							<li><a href="https://github.com/jrods/homepage/issues">Github Issue Tracker</a></li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 		<article id="main" class="">
 
@@ -124,28 +170,20 @@ require('lib/Toml.php');
 				<h2>Education</h2>
 
 				<h3>Camosun College: 2013 - 2015</h3>
+
 				<h4>Computer Systems Techology</h4>
 
-				<p><span style="font-size:20px;">Courses Completed:</span></p>
-				<div id="courses">
-				<?php
-				$courses = Toml::parseFile('share/courses.toml');
-
-				foreach($courses['courses'] as $key => $value) {
-					echo "<p>$key: $value</p>";
-				}
-				?>
-				</div>
+				<div id="courses"></div>
 
 			</section>
 
 			<section id="languages" class="container">
 				<h2>Programming Languages</h2>
-				
+
 				<div class="">
 
 					<ul>
-						<li class="head">PHP</li>						
+						<li class="head">PHP</li>
 					</ul>
 
 					<ul>
@@ -167,7 +205,7 @@ require('lib/Toml.php');
 					<ul>
 						<li class="head">Git</li>
 						<li>(Doesn't really belong here, but it's important to show that I have VCS experience)</li>
-					</ul>					
+					</ul>
 
 					<ul>
 						<li class="head">C#.NET</li>
@@ -234,7 +272,7 @@ require('lib/Toml.php');
 			<section id="software" class="container">
 				<h2>Software/Frameworks/Tools</h2>
 
-				<div class="vertical five-col">
+				<div class="vertical">
 					<ul>
 						<li class="head">IDEs/Text Editors</li>
 						<li>Emacs</li>
@@ -357,7 +395,7 @@ require('lib/Toml.php');
 
 		<footer>
 			<div class="container">
-				<p>&copy; 2015 by Jared R. Smith</p>
+				<p>&copy; 2015-2016 by Jared R. Smith</p>
 			</div>
 		</footer>
 

@@ -66,6 +66,11 @@ h4 {
     font-size: 1.4em;
     font-weight: 400;
 }
+h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    font-style: italic;
+}
 li, ul {
     display: inline-block;
     list-style: none;
@@ -134,10 +139,6 @@ th {
     display: inline-block;
     vertical-align: text-top;
 }
-
-.five-col > ul {
-    width: 24.5%;
-}
 .vertical ul {
     display: inline-block;
     padding: 12px 0 0;
@@ -169,6 +170,9 @@ th {
    ------------------------------ */
 #wrap {
 
+}
+#main h4 {
+    padding-left: 24px;
 }
 .container {
     margin: 0 auto;
@@ -204,63 +208,95 @@ footer p {
 
 /* Nav bar
    ------------------------------ */
-#nav {
+nav {
     border-top: 4px solid #6D4084;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
 }
-#nav * {
+nav * {
     font-family: 'Fira Sans';
     font-size: 18px;
 }
-#nav-wrap {
+nav #nav-wrap {
     display: block;
 }
-#nav-wrap li {
+nav #nav-wrap li {
     position: relative;
     padding: 12px 8px;
 }
-#nav-wrap li > ul {
+nav #nav-wrap li ul {
     display: none;
     position: absolute;
     border: 1px solid #ccc;
     background-color: #fff;
 }
-.sub {
-    top: 100%;
-    left: 0;
-}
-.subsub {
-    top: -1px;
-    left: 100%;
-}
-#nav-wrap li > ul > li {
+nav #nav-wrap li ul li {
     padding: 12px;
     min-width: 140px;
 }
-#nav-wrap li:hover {
+nav #nav-wrap li:hover {
     background-color: #555;
 }
-#nav-wrap li:hover > ul {
+nav #nav-wrap li:hover > ul {
     display: inline-block;
     border: 1px solid #777;
     background-color: #444;
 }
-#nav-wrap ul:hover {
+nav #nav-wrap ul:hover {
     display: inline-block;
 }
-#nav-wrap li:hover,
-#nav-wrap li:hover > a,
-#nav-wrap li:hover > ul > li > a {
+nav #nav-wrap .sub-menu {
+    top: 100%;
+    left: 0;
+}
+nav #nav-wrap .sub-menu li .sub-menu {
+    top: -1px;
+    left: 100%;
+}
+nav #nav-wrap li:hover,
+nav #nav-wrap li:hover > a,
+nav #nav-wrap li:hover > ul > li > a {
     color: #fff;
 }
-#nav-wrap a {
+nav #nav-wrap a {
     color: #333;
 }
-#nav-wrap a,
-#nav-wrap a:visited {
+nav #nav-wrap a,
+nav #nav-wrap a:visited,
+nav #mobile-nav-wrap a,
+nav #mobile-nav-wrap a:visited {
     text-decoration: none;
 }
+nav #mobile-nav-wrap {
+    display: none;
+}
+@media only screen and (max-width: 1280px) {
+    nav #nav-wrap {
+        display: none;
+    }
+    nav #mobile-nav-wrap {
+        display: block;
+        text-align: right;
+    }
+    nav #mobile-nav-wrap #hamburger-menu {
+        display: none;
+    }
+    nav #mobile-nav-wrap #hamburger-menu + label {
+        cursor: pointer;
+        padding: 8px;
+    }
+    nav #mobile-nav-wrap #hamburger-menu:checked ~ ul {
+        display: block;
+    }
+    nav #mobile-nav-wrap ul {
+        display: none;
+        text-align: left;
+    }
+    nav #mobile-nav-wrap ul > * {
+        display: block;
+    }
+}
+
 
 /* Content
    ------------------------------ */
@@ -281,10 +317,10 @@ footer p {
     vertical-align: top;
 }
 #intro {
-    
+
 }
 #site-intro {
-    
+
 }
 
 #contact {
@@ -335,6 +371,9 @@ footer p {
 #software {
 
 }
+#software ul {
+    width: 33%;
+}
 
 #projects {
 
@@ -383,8 +422,47 @@ footer p {
 
 /* Mobile
    ------------------------------ */
-@media only screen and (min-width:320px) {
+@media only screen and (max-width: 1280px) {
+    @media (min-width: 320px) {
+        #skills p {
+            width: 100%;
+        }
+        #software ul {
+            width: 100%;
+        }
+        #courses p {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+    @media (min-width: 555px) {
+        #software ul {
+            width: 49.5%;
+        }
+        #courses p {
+            width: 65%;
+        }
+    }
+    @media (min-width: 768px) {
+        #courses p {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+    @media (min-width: 1140px) {
+        #courses p {
+            width: 33%;
+        }
+    }
 
+    @media (max-width: 768px) {
+        #projects img {
+            margin: 0;
+            margin-bottom: 18px;
+            width: 100%;
+        }
+    }
 }
 @media only screen and (min-width:480px) {
 
