@@ -1,0 +1,136 @@
+:root {
+    --bg: #6D4084;
+    --bg-dark: #563666;
+    --fg: #eee;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1.0rem;
+}
+li, ul {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/**
+ *  Common
+**/
+header, footer {    
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    z-index: 5;
+}
+header *,
+footer * {
+    color:  var(--fg);
+}
+.spacer {
+    flex: 1 1 auto;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+}
+.header-wrap {
+    background-color: var(--bg);
+    width: 100%;
+    padding: 2vh 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title {
+    font-size: 1.8em;
+    white-space: nowrap;
+}
+#subtitle {
+    font-size: 1.6em;
+}
+
+
+/** Nav **/
+
+nav {
+    order: 3;
+    min-width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+}
+#nav-button,
+label[for="nav-button"] {
+    order: 2;
+    display: none;
+}
+label[for="nav-button"] {
+    font-size: 1.8em;
+}
+nav a {
+    padding: 10px 10px;
+}
+nav a:hover {
+    color: #ccc;
+}
+nav a,
+nav a:visited {
+    text-decoration: none;
+}
+@media (max-width: 650px) {
+    nav {
+        visibility: hidden;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-dark);
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    label[for="nav-button"] {
+        display: block;
+    }
+    #nav-button:checked ~ nav {
+        visibility: visible;
+    }
+}
+
+
+
+footer {
+    padding: 60px 0;
+}
+footer p {
+    width: 100%;
+    text-align: right;
+}

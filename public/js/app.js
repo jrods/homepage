@@ -9,8 +9,8 @@ window.addEventListener('DOMContentLoaded', function (event) {
 
     console.log('based');
 
-    //window.sticky = new PureSticky(true);
-    //sticky.add('#nav',0);
+    window.sticky = new PureSticky(true);
+    sticky.add('#nav',0);
 
     var list_courses = function(data) {
         var courses = document.getElementById('courses');
