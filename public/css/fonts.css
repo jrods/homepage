@@ -109,14 +109,18 @@
   }
 }
 
-/* All Genericons
-   ------------------------------ */
+/**
+ * All Genericons
+ */
+
 .genericon {
+    font-size: 16px;
+    vertical-align: top;
     text-align: center;
     -moz-transition: color .1s ease-in 0;
     -webkit-transition: color .1s ease-in 0;
     display: inline-block;
-    font-family: 'Genericons';
+    font-family: "Genericons";
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -128,8 +132,59 @@
     speak: none;
 }
 
-/* Individual icons
-   ------------------------------ */
+
+/**
+ * Helper classes
+ */
+
+.genericon-rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.genericon-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.genericon-rotate-270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.genericon-flip-horizontal {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.genericon-flip-vertical {
+    -webkit-transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+
+/**
+ * Individual icons
+ */
+
 .genericon-404:before { content: "\f423"; }
 .genericon-activity:before { content: "\f508"; }
 .genericon-anchor:before { content: "\f509"; }
@@ -277,3 +332,4 @@
 .genericon-xpost:before { content: "\f504"; }
 .genericon-youtube:before { content: "\f213"; }
 .genericon-zoom:before { content: "\f402"; }
+
